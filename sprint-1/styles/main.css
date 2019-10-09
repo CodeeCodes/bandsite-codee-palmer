@@ -47,7 +47,7 @@
   src: url(../../assets/fonts/avenir/Linotype\-\AvenirNextLTPro-Light.otf);
   font-family: "AvenirLight";
   font-style: normal;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 /*media query for mobile using max width so that it doesn't have a break at min-width*/
@@ -196,6 +196,7 @@ h5 {
       justify-content: space-around;
   list-style-type: none;
   padding-left: 0;
+  margin-bottom: 0;
 }
 
 .header__menu-item {
@@ -380,7 +381,7 @@ h5 {
 }
 
 .footer__contact-paragraph-one, .footer__contact-paragraph-two {
-  font-family: avenirLight;
+  font-family: "AvenirLight";
 }
 
 .contact-emails {
