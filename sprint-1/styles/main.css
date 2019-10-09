@@ -203,11 +203,12 @@ h5 {
 .header__menu-link {
   text-decoration: none;
   color: #fff;
+  padding: 10px;
 }
 
 .header__menu-link__menu-link:hover {
   border-bottom: 3px solid #fff;
-  padding-bottom: 5px;
+  padding-bottom: 2px;
 }
 
 @media only screen and (min-width: 768px) {
