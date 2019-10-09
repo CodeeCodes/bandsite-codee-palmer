@@ -23,7 +23,7 @@
 
 .gallery__photo-image {
   width: 90%;
-  margin: 8.5px 5%;
+  margin: 8px 5%;
 }
 
 .gallery__heading {
@@ -34,13 +34,27 @@
   .gallery__photo-image {
     width: 29%;
     height: 126px;
-    margin: 12px;
+    margin: 12px 1.56%;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
   .gallery__heading {
     margin-left: 3.13%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .gallery__photo-image {
+    width: 24%;
+    height: 193px;
+    margin: 12px 1.56%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .gallery__heading {
+    margin-left: 12.5%;
   }
 }
 /*# sourceMappingURL=gallery.css.map */

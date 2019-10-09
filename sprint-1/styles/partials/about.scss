@@ -19,6 +19,7 @@
 	&__heading-two {
 		margin-top: 0;
 		margin-bottom: 32px;
+		width: 90%;
 	}
 	&__heading-three {
 		margin-top: 0;
@@ -29,12 +30,26 @@
 		margin-bottom: 24px;
 	}
 }
-.paragraph-split {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	margin-top: 0;
-}
-.paragraph-split-text {
-	width: 50%;
+
+@include medium {
+	.about {
+		margin-left: 4%;
+		margin-right: 4%;
+
+		&__image {
+			height: 362px;
+			margin-bottom: 24px;
+		}
+		.paragraph-split {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		.paragraph-text {
+			width: 48.33%;
+		}
+		&__heading-one {
+			margin-top: 70px;
+		}
+	}
 }
