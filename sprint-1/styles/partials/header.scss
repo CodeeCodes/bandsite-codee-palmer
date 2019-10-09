@@ -1,0 +1,43 @@
+.header {
+	width: 100vw;
+	height: 80px;
+	color: #fff;
+	font-family: "Avenir";
+	background-color: $navBackground;
+	display: flex;
+	flex-direction: column;
+
+	&__logo {
+		margin-top: 16px;
+	}
+	&__menu {
+		display: flex;
+		justify-content: space-around;
+		list-style-type: none;
+		padding-left: 0;
+	}
+
+	&__menu-items {
+		width: 50%;
+		margin-top: 16px;
+	}
+	&__menu-link {
+		text-decoration: none;
+		color: #fff;
+
+		&__menu-link:hover {
+			border-bottom: 3px solid #fff;
+			padding-bottom: 5px;
+		}
+	}
+}
+@include medium {
+	.header {
+		flex-direction: row;
+
+		&__menu {
+			display: flex;
+			justify-content: space-around;
+		}
+	}
+}

@@ -1,0 +1,28 @@
+@import "./breakpoints";
+.gallery {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+
+	&__photo-image {
+		width: 90%;
+		margin: 8.5px 5%;
+	}
+	&__heading {
+		margin-left: 5%;
+	}
+}
+@include medium {
+	.gallery__photo-image {
+		width: 29%;
+		height: 126px;
+		margin: 12px;
+		justify-content: space-evenly;
+	}
+
+	.gallery__heading {
+		margin-left: 3.13%;
+	}
+}

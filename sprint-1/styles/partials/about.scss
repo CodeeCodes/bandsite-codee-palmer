@@ -1,0 +1,40 @@
+.about {
+	color: $paraText;
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	align-content: center;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 73px;
+
+	&__image {
+		height: 150px;
+		margin-bottom: 24px;
+	}
+	&__heading-one {
+		margin-top: 32px;
+		margin-bottom: 24px;
+	}
+	&__heading-two {
+		margin-top: 0;
+		margin-bottom: 32px;
+	}
+	&__heading-three {
+		margin-top: 0;
+		margin-bottom: 40px;
+	}
+	&__heading-four {
+		margin-top: 0;
+		margin-bottom: 24px;
+	}
+}
+.paragraph-split {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 0;
+}
+.paragraph-split-text {
+	width: 50%;
+}

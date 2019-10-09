@@ -1,0 +1,59 @@
+.footer {
+	width: 100vw;
+	color: #fff;
+	font-family: "Avenir";
+	background-color: $navBackground;
+	display: flex;
+	flex-direction: column;
+
+	&__nav {
+		width: 100%;
+	}
+	&__heading {
+		margin-left: 5%;
+	}
+	&__icons {
+		display: flex;
+		justify-content: space-around;
+		width: 50%;
+		margin-bottom: 20px;
+	}
+
+	&__contacts,
+	&__logo {
+		margin-left: 5%;
+	}
+	&__contact-heading-one,
+	&__contact-paragraph-one {
+		margin-bottom: 0;
+	}
+	&__contact-heading-two,
+	&__contact-paragraph-two {
+		margin-top: 0;
+	}
+	&__copyright-text {
+		margin: 0 0 0 5%;
+	}
+	&__contact-paragraph-one,
+	&__contact-paragraph-two {
+		font-family: avenirLight;
+	}
+}
+
+.contact-emails {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+}
+#last-gallery-image,
+#last-contact {
+	margin-bottom: 40px;
+}
+
+@include medium {
+	.footer__copyright {
+		display: flex;
+		flex-direction: row;
+	}
+}
