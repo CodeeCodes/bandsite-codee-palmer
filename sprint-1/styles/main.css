@@ -95,8 +95,9 @@ h5 {
 
 .hero {
   position: relative;
-  height: 183px;
+  height: 263px;
   width: 100vw;
+  padding-top: 80px;
 }
 
 .hero__image {
@@ -115,7 +116,7 @@ h5 {
 .hero__heading {
   color: #fff;
   position: absolute;
-  top: 91.5px;
+  top: 155px;
   left: 5%;
   margin: 0;
 }
@@ -179,6 +180,8 @@ h5 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: fixed;
+  z-index: 1;
 }
 
 .header__logo {
@@ -195,20 +198,16 @@ h5 {
   padding-left: 0;
 }
 
-.header__menu-items {
+.header__menu-item {
   width: 50%;
-  margin-top: 16px;
+  border-bottom: 2px solid #fff;
+  margin-top: 0;
+  padding: 0 80px 0 60px;
 }
 
 .header__menu-link {
   text-decoration: none;
   color: #fff;
-  padding: 10px;
-}
-
-.header__menu-link__menu-link:hover {
-  border-bottom: 3px solid #fff;
-  padding-bottom: 2px;
 }
 
 @media only screen and (min-width: 768px) {
