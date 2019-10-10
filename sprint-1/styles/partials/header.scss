@@ -22,7 +22,6 @@
 
 	&__menu-item {
 		width: 50%;
-		border-bottom: 2px solid #fff;
 		margin-top: 0;
 		text-align: center;
 	}
@@ -30,6 +29,10 @@
 		text-decoration: none;
 		color: #fff;
 	}
+}
+
+#item-active {
+	border-bottom: 2px solid #fff;
 }
 @include medium {
 	.header {

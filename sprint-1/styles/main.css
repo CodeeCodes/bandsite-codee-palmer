@@ -228,7 +228,6 @@ h5 {
 
 .header__menu-item {
   width: 50%;
-  border-bottom: 2px solid #fff;
   margin-top: 0;
   text-align: center;
 }
@@ -236,6 +235,10 @@ h5 {
 .header__menu-link {
   text-decoration: none;
   color: #fff;
+}
+
+#item-active {
+  border-bottom: 2px solid #fff;
 }
 
 @media only screen and (min-width: 768px) {
@@ -414,7 +417,7 @@ h5 {
 }
 
 .footer__heading {
-  margin-left: 5%;
+  margin-left: 0;
 }
 
 .footer__contact-heading {
@@ -436,15 +439,25 @@ h5 {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   width: 50%;
   margin-bottom: 20px;
 }
 
 .footer__copyright {
-  margin-left: 0;
+  margin-left: 5%;
+}
+
+.footer__copyright-text {
+  font-family: "Avenirthin";
+}
+
+.icon-link {
+  margin-top: 10px;
+  margin-left: 1%;
+  margin-right: 20%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -463,9 +476,5 @@ h5 {
 
 .footer__icons {
   margin: 15px 4%;
-}
-
-.footer__heading {
-  margin-left: 4%;
 }
 /*# sourceMappingURL=main.css.map */

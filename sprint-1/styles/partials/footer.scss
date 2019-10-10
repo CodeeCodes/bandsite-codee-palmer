@@ -10,7 +10,7 @@
 		width: 100%;
 	}
 	&__heading {
-		margin-left: 5%;
+		margin-left: 0;
 	}
 	&__contact-heading {
 		margin: 5%;
@@ -23,14 +23,21 @@
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		justify-content: space-between;
+		justify-content: flex-start;
 		width: 50%;
 		margin-bottom: 20px;
 	}
+	&__copyright {
+		margin-left: 5%;
+	}
+	&__copyright-text {
+		font-family: "Avenirthin";
+	}
 }
-
-.footer__copyright {
-	margin-left: 0;
+.icon-link {
+	margin-top: 10px;
+	margin-left: 1%;
+	margin-right: 20%;
 }
 
 @include medium {
@@ -42,7 +49,4 @@
 }
 .footer__icons {
 	margin: 15px 4%;
-}
-.footer__heading {
-	margin-left: 4%;
 }
