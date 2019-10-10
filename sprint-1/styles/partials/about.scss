@@ -65,3 +65,23 @@
 		}
 	}
 }
+@include large {
+	.about {
+		width: 62.22%;
+		margin-left: 12.5%;
+		margin-right: 12.5%;
+		&__heading {
+			margin-left: 12.5%;
+		}
+		&__image {
+			height: 450px;
+			margin-left: 10%;
+		}
+		&__paragraph-text,
+		&__heading-two,
+		&__heading-three,
+		&__heading-four {
+			margin-left: 10%;
+		}
+	}
+}

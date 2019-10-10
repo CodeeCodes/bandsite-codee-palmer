@@ -54,3 +54,11 @@
 		}
 	}
 }
+@include large {
+	.header__logo {
+		margin-left: 12.5%;
+	}
+	.header__menu-item {
+		margin: 0 0 0 56px;
+	}
+}

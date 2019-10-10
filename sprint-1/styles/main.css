@@ -259,6 +259,15 @@ h5 {
   }
 }
 
+@media only screen and (min-width: 1440px) {
+  .header__logo {
+    margin-left: 12.5%;
+  }
+  .header__menu-item {
+    margin: 0 0 0 56px;
+  }
+}
+
 /*media query for mobile using max width so that it doesn't have a break at min-width*/
 /*media query for tablet*/
 /*media query for landscape,
@@ -396,8 +405,29 @@ h5 {
   .about__heading-two {
     font-size: 21px;
   }
+  .about__heading-three {
+    font-size: 15px;
+  }
   .about__heading-four {
     font-size: 24px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .about {
+    width: 62.22%;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+  }
+  .about__heading {
+    margin-left: 12.5%;
+  }
+  .about__image {
+    height: 450px;
+    margin-left: 10%;
+  }
+  .about__paragraph-text, .about__heading-two, .about__heading-three, .about__heading-four {
+    margin-left: 10%;
   }
 }
 
