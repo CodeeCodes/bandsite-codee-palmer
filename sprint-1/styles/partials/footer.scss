@@ -13,11 +13,18 @@
 	&__heading {
 		margin-left: 5%;
 	}
+	&__contact-heading,
+	&__contact-paragraph {
+		margin: 5%;
+	}
 	&__icons {
 		display: flex;
 		justify-content: space-around;
 		width: 50%;
 		margin-bottom: 20px;
+	}
+	.footer__copyright {
+		margin-left: 5%;
 	}
 }
 

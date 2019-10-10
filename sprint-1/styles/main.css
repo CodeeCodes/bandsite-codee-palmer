@@ -224,7 +224,7 @@ h5 {
   width: 50%;
   border-bottom: 2px solid #fff;
   margin-top: 0;
-  padding: 0 20px 0 20px;
+  text-align: center;
 }
 
 .header__menu-link {
@@ -412,6 +412,10 @@ h5 {
   margin-left: 5%;
 }
 
+.footer__contact-heading, .footer__contact-paragraph {
+  margin: 5%;
+}
+
 .footer__icons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -420,6 +424,10 @@ h5 {
       justify-content: space-around;
   width: 50%;
   margin-bottom: 20px;
+}
+
+.footer .footer__copyright {
+  margin-left: 5%;
 }
 
 @media only screen and (min-width: 768px) {
