@@ -1,7 +1,6 @@
 .footer {
 	width: 100vw;
 	color: #fff;
-	font-family: "Avenir";
 	background-color: $navBackground;
 	display: flex;
 	flex-direction: column;
@@ -13,19 +12,25 @@
 	&__heading {
 		margin-left: 5%;
 	}
-	&__contact-heading,
+	&__contact-heading {
+		margin: 5%;
+	}
 	&__contact-paragraph {
+		font-family: "AvenirThin";
 		margin: 5%;
 	}
 	&__icons {
 		display: flex;
-		justify-content: space-around;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
 		width: 50%;
 		margin-bottom: 20px;
 	}
-	.footer__copyright {
-		margin-left: 5%;
-	}
+}
+
+.footer__copyright {
+	margin-left: 0;
 }
 
 @include medium {
@@ -34,4 +39,10 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
+}
+.footer__icons {
+	margin: 15px 4%;
+}
+.footer__heading {
+	margin-left: 4%;
 }

@@ -50,6 +50,12 @@
   font-weight: 300;
 }
 
+@font-face {
+  src: url(../../assets/fonts/avenir/Linotype\-\AvenirNextLTPro-Thin.otf);
+  font-family: "AvenirThin";
+  font-weight: 300;
+}
+
 /*media query for mobile using max width so that it doesn't have a break at min-width*/
 /*media query for tablet*/
 /*media query for landscape,
@@ -392,7 +398,6 @@ h5 {
 .footer {
   width: 100vw;
   color: #fff;
-  font-family: "Avenir";
   background-color: #323232;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -412,7 +417,12 @@ h5 {
   margin-left: 5%;
 }
 
-.footer__contact-heading, .footer__contact-paragraph {
+.footer__contact-heading {
+  margin: 5%;
+}
+
+.footer__contact-paragraph {
+  font-family: "AvenirThin";
   margin: 5%;
 }
 
@@ -420,14 +430,21 @@ h5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 50%;
   margin-bottom: 20px;
 }
 
-.footer .footer__copyright {
-  margin-left: 5%;
+.footer__copyright {
+  margin-left: 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -442,5 +459,13 @@ h5 {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+}
+
+.footer__icons {
+  margin: 15px 4%;
+}
+
+.footer__heading {
+  margin-left: 4%;
 }
 /*# sourceMappingURL=main.css.map */
