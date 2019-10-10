@@ -64,6 +64,7 @@ body {
   height: 100vh;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 *,
@@ -169,7 +170,7 @@ h5 {
             justify-content: space-evenly;
   }
   .gallery__heading {
-    margin-left: 3.13%;
+    margin-left: 4%;
   }
 }
 
@@ -298,7 +299,7 @@ h5 {
             justify-content: space-evenly;
   }
   .gallery__heading {
-    margin-left: 3.13%;
+    margin-left: 4%;
   }
 }
 
