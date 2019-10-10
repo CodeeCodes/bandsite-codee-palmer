@@ -96,18 +96,12 @@ h5 {
 .hero {
   height: 263px;
   width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .hero__image {
   height: 100%;
   width: 100%;
-}
-
-.hero__overlay {
-  height: 100%;
-  width: 100vw;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: -1;
 }
 
 .hero__heading {
@@ -120,10 +114,19 @@ h5 {
 
 @media only screen and (min-width: 768px) {
   .hero {
-    height: 400px;
+    height: 100%;
   }
   .hero__heading {
     top: 220px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .hero {
+    height: 100%;
+  }
+  .hero__heading {
+    top: 335px;
   }
 }
 
@@ -174,10 +177,13 @@ h5 {
 }
 
 @media only screen and (min-width: 1440px) {
+  .gallery {
+    margin-bottom: 28px;
+  }
   .gallery__photo-image {
     width: 24%;
     height: 193px;
-    margin: 12px 1.56%;
+    margin: 12px;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -315,10 +321,13 @@ h5 {
 }
 
 @media only screen and (min-width: 1440px) {
+  .gallery {
+    margin-bottom: 28px;
+  }
   .gallery__photo-image {
     width: 24%;
     height: 193px;
-    margin: 12px 1.56%;
+    margin: 12px;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -351,7 +360,7 @@ h5 {
 }
 
 .about__heading-one {
-  margin-top: 32px;
+  margin-top: 75px;
   margin-bottom: 24px;
 }
 
@@ -419,15 +428,19 @@ h5 {
     margin-left: 12.5%;
     margin-right: 12.5%;
   }
-  .about__heading {
+  .about__heading-one {
     margin-left: 12.5%;
+    margin-top: 70px;
   }
   .about__image {
     height: 450px;
     margin-left: 10%;
   }
-  .about__paragraph-text, .about__heading-two, .about__heading-three, .about__heading-four {
+  .about__heading-two, .about__heading-three, .about__heading-four {
     margin-left: 10%;
+  }
+  .about .paragraph-split {
+    padding-left: 10%;
   }
 }
 
@@ -449,17 +462,12 @@ h5 {
   width: 100%;
 }
 
-.footer__heading {
-  margin-left: 0;
+.footer__contacts {
+  margin-left: 5%;
 }
 
-.footer__contact-heading {
-  margin: 5%;
-}
-
-.footer__contact-paragraph {
+.footer__contact-paragraph, .footer__copyright-text {
   font-family: "AvenirThin";
-  margin: 5%;
 }
 
 .footer__icons {
@@ -477,14 +485,11 @@ h5 {
           justify-content: flex-start;
   width: 50%;
   margin-bottom: 20px;
+  margin-left: 5%;
 }
 
 .footer__copyright {
   margin-left: 5%;
-}
-
-.footer__copyright-text {
-  font-family: "Avenirthin";
 }
 
 .icon-link {
@@ -494,6 +499,9 @@ h5 {
 }
 
 @media only screen and (min-width: 768px) {
+  .footer__icons {
+    margin: 15px 4%;
+  }
   .footer__copyright {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -505,9 +513,41 @@ h5 {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .footer__heading {
+    margin-right: 15%;
+  }
+  .footer__contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: 3%;
+  }
+  .footer__contact-paragraph {
+    margin-top: 0;
+  }
+  .footer__copyright {
+    margin-left: 3%;
+  }
 }
 
-.footer__icons {
-  margin: 15px 4%;
+.icon-link {
+  display: inline-block;
+  margin-top: 25px;
+  margin-left: 0;
+  margin-right: 10%;
+}
+
+.contact-emails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 /*# sourceMappingURL=main.css.map */

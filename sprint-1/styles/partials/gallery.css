@@ -45,10 +45,13 @@
 }
 
 @media only screen and (min-width: 1440px) {
+  .gallery {
+    margin-bottom: 28px;
+  }
   .gallery__photo-image {
     width: 24%;
     height: 193px;
-    margin: 12px 1.56%;
+    margin: 12px;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
