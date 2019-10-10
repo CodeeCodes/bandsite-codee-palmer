@@ -30,6 +30,9 @@
 		margin-bottom: 24px;
 	}
 }
+.paragraph-text {
+	font-family: "AvenirThin";
+}
 
 @include medium {
 	.about {
@@ -50,6 +53,15 @@
 		}
 		&__heading-one {
 			margin-top: 70px;
+		}
+		&__heading-two {
+			font-size: 21px;
+		}
+		&__heading-three {
+			font-size: 15px;
+		}
+		&__heading-four {
+			font-size: 24px;
 		}
 	}
 }

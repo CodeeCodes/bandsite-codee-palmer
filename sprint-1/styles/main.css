@@ -4,42 +4,36 @@
 @font-face {
   src: url(../../assets/fonts/avenir/avenir-next-regular.otf);
   font-family: "Avenir";
-  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   src: url(../../assets/fonts/avenir/avenir-next-bold.otf);
   font-family: "AvenirBold";
-  font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   src: url(../../assets/fonts/avenir/avenir-demi-bold.otf);
   font-family: "AvenirDemi";
-  font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   src: url(../../assets/fonts/avenir/Linotype\-\AvenirNextLTPro-BoldIt.otf);
   font-family: "AvenirBoldlt";
-  font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   src: url(../../assets/fonts/avenir/Linotype\-\AvenirNextLTPro-DemiIt.otf);
   font-family: "AvenirDemilt";
-  font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   src: url(../../assets/fonts/avenir/Linotype\-\AvenirNextLTPro-Heavy.otf);
   font-family: "AvenirHeavy";
-  font-weight: 800;
   font-style: normal;
 }
 
@@ -47,13 +41,12 @@
   src: url(../../assets/fonts/avenir/Linotype\-\AvenirNextLTPro-Light.otf);
   font-family: "AvenirLight";
   font-style: normal;
-  font-weight: 300;
 }
 
 @font-face {
   src: url(../../assets/fonts/avenir/Linotype\-\AvenirNextLTPro-Thin.otf);
   font-family: "AvenirThin";
-  font-weight: 300;
+  font-style: normal;
 }
 
 /*media query for mobile using max width so that it doesn't have a break at min-width*/
@@ -369,6 +362,10 @@ h5 {
   margin-bottom: 24px;
 }
 
+.paragraph-text {
+  font-family: "AvenirThin";
+}
+
 @media only screen and (min-width: 768px) {
   .about {
     margin-left: 4%;
@@ -395,6 +392,12 @@ h5 {
   }
   .about__heading-one {
     margin-top: 70px;
+  }
+  .about__heading-two {
+    font-size: 21px;
+  }
+  .about__heading-four {
+    font-size: 24px;
   }
 }
 
