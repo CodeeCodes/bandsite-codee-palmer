@@ -45,7 +45,10 @@
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 }
-
+#bandsite-logo {
+	display: none;
+	position: relative;
+}
 @include medium {
 	h1 {
 		font-size: 36px;
@@ -103,16 +106,19 @@
 	display: flex;
 	flex-wrap: wrap;
 }
+#bandsite-logo {
+	display: inline-block;
+	bottom: 22px;
+	left: 160px;
+}
+
 #icons-move {
 	display: flex;
 	justify-content: center;
 	width: 60%;
 }
+
 @include large {
-	#icons-move {
-		display: flex;
-		justify-content: space-around;
-	}
 	.icon-link {
 		margin-top: 60px;
 		margin-right: 32px;
@@ -136,8 +142,9 @@
 	.footer__contact-heading {
 		margin-bottom: 24px;
 	}
-	#icons-move {
-		display: inline-block;
-		margin-left: 10%;
-	}
+}
+#bandsite-logo {
+	display: inline-block;
+	bottom: 22px;
+	left: 345px;
 }

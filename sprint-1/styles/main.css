@@ -937,6 +937,11 @@ h5 {
       flex-wrap: wrap;
 }
 
+#bandsite-logo {
+  display: none;
+  position: relative;
+}
+
 @media only screen and (min-width: 768px) {
   h1 {
     font-size: 36px;
@@ -1012,6 +1017,12 @@ h5 {
       flex-wrap: wrap;
 }
 
+#bandsite-logo {
+  display: inline-block;
+  bottom: 22px;
+  left: 160px;
+}
+
 #icons-move {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1023,13 +1034,6 @@ h5 {
 }
 
 @media only screen and (min-width: 1440px) {
-  #icons-move {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
   .icon-link {
     margin-top: 60px;
     margin-right: 32px;
@@ -1053,9 +1057,11 @@ h5 {
   .footer__contact-heading {
     margin-bottom: 24px;
   }
-  #icons-move {
-    display: inline-block;
-    margin-left: 10%;
-  }
+}
+
+#bandsite-logo {
+  display: inline-block;
+  bottom: 22px;
+  left: 345px;
 }
 /*# sourceMappingURL=main.css.map */
