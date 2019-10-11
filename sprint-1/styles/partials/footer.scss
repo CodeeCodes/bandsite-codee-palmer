@@ -1,3 +1,7 @@
+@import "./breakpoints";
+@import "./colours";
+@import "./fonts";
+
 .footer {
 	width: 100vw;
 	color: #fff;
@@ -35,39 +39,46 @@
 	margin-left: 1%;
 	margin-right: 20%;
 }
+#icons-move {
+	width: 70%;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
 
 @include medium {
 	h1 {
-		text-size: 60px;
-		line-height: 68px;
+		font-size: 36px;
+		line-height: 44px;
 	}
 	h2 {
-		text-size: 24px;
+		font-size: 24px;
 		line-height: 32px;
 	}
 	h3 {
-		text-size: 16px;
+		font-size: 16px;
 		line-height: 24px;
 	}
 	h4 {
-		text-size: 14px;
+		font-size: 14px;
 		line-height: 20px;
 	}
 	h5 {
-		text-size: 12px;
+		font-size: 12px;
 		line-height: 20px;
 	}
 	.footer__icons {
-		margin: 15px 4%;
+		margin: 15px 0% 0 3.13%;
+		width: 93%;
+	}
+	.footer__heading {
+		margin-right: 0;
+		margin-top: 15px;
 	}
 	.footer__copyright {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-	}
-
-	.footer__heading {
-		margin-right: 15%;
 	}
 	.footer__contacts {
 		display: flex;
@@ -92,5 +103,41 @@
 	display: flex;
 	flex-wrap: wrap;
 }
+#icons-move {
+	display: flex;
+	justify-content: center;
+	width: 60%;
+}
 @include large {
+	#icons-move {
+		display: flex;
+		justify-content: space-around;
+	}
+	.icon-link {
+		margin-top: 60px;
+		margin-right: 32px;
+	}
+	.footer__copyright {
+		margin-left: 180px;
+	}
+	.footer__nav {
+		margin-left: 12.5%;
+	}
+	.footer__heading {
+		margin-top: 48px;
+	}
+	.footer__icons {
+		margin-left: 0;
+		margin-top: 0;
+	}
+	#move-large {
+		margin-left: 0;
+	}
+	.footer__contact-heading {
+		margin-bottom: 24px;
+	}
+	#icons-move {
+		display: inline-block;
+		margin-left: 10%;
+	}
 }

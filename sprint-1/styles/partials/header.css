@@ -54,31 +54,51 @@
   font-style: normal;
 }
 
-.gallery {
+.header {
+  width: 100vw;
+  height: 80px;
+  color: #fff;
+  font-family: "Avenir";
+  background-color: #323232;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  z-index: 1;
 }
 
-.gallery__photo-image {
-  width: 90%;
-  margin: 8px 5%;
+.header__logo {
+  margin-top: 16px;
 }
 
-.gallery__heading {
-  margin-left: 5%;
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.header__menu-item {
+  width: 50%;
+  margin-top: 0;
+  text-align: center;
+}
+
+.header__menu-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+#item-active {
+  border-bottom: 2px solid #fff;
 }
 
 @media only screen and (min-width: 768px) {
@@ -102,33 +122,37 @@
     font-size: 12px;
     line-height: 20px;
   }
-  .gallery__photo-image {
-    width: 29%;
-    height: 126px;
-    margin: 12px 1.56%;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+  .header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
-  .gallery__heading {
+  .header__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-bottom: 0;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .header__menu-item {
+    margin: 0 20px 0 20px;
+  }
+  .header__logo {
     margin-left: 4%;
+    margin-top: 0;
   }
 }
 
 @media only screen and (min-width: 1440px) {
-  .gallery {
-    margin-bottom: 28px;
-  }
-  .gallery__photo-image {
-    width: 24%;
-    height: 193px;
-    margin: 12px;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  .gallery__heading {
+  .header__logo {
     margin-left: 12.5%;
   }
+  .header__menu-item {
+    margin: 0 0 0 56px;
+  }
 }
-/*# sourceMappingURL=gallery.css.map */
+/*# sourceMappingURL=header.css.map */

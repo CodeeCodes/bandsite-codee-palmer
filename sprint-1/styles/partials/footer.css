@@ -1,0 +1,244 @@
+/*media query for mobile using max width so that it doesn't have a break at min-width*/
+/*media query for tablet*/
+/*media query for landscape,
+		medium pixel density desktop*/
+/*media query for  landscape, large pixel density desktop*/
+/* Create a variable first  $variable name*/
+/*global colours*/
+/*bandsite only images*/
+@font-face {
+  src: url(../../assets/fonts/avenir/avenir-next-regular.otf);
+  font-family: "Avenir";
+  font-style: normal;
+}
+
+@font-face {
+  src: url(../../assets/fonts/avenir/avenir-next-bold.otf);
+  font-family: "AvenirBold";
+  font-style: normal;
+}
+
+@font-face {
+  src: url(../../assets/fonts/avenir/avenir-demi-bold.otf);
+  font-family: "AvenirDemi";
+  font-style: normal;
+}
+
+@font-face {
+  src: url(../../assets/fonts/avenir/Linotype\-\AvenirNextLTPro-BoldIt.otf);
+  font-family: "AvenirBoldlt";
+  font-style: normal;
+}
+
+@font-face {
+  src: url(../../assets/fonts/avenir/Linotype\-\AvenirNextLTPro-DemiIt.otf);
+  font-family: "AvenirDemilt";
+  font-style: normal;
+}
+
+@font-face {
+  src: url(../../assets/fonts/avenir/Linotype\-\AvenirNextLTPro-Heavy.otf);
+  font-family: "AvenirHeavy";
+  font-style: normal;
+}
+
+@font-face {
+  src: url(../../assets/fonts/avenir/Linotype\-\AvenirNextLTPro-Light.otf);
+  font-family: "AvenirLight";
+  font-style: normal;
+}
+
+@font-face {
+  src: url(../../assets/fonts/avenir/Linotype\-\AvenirNextLTPro-Thin.otf);
+  font-family: "AvenirThin";
+  font-style: normal;
+}
+
+.footer {
+  width: 100vw;
+  color: #fff;
+  background-color: #323232;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 12px;
+}
+
+.footer__nav {
+  width: 100%;
+}
+
+.footer__contacts {
+  margin-left: 5%;
+}
+
+.footer__contact-paragraph, .footer__copyright-text {
+  font-family: "AvenirThin";
+}
+
+.footer__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 50%;
+  margin-bottom: 20px;
+  margin-left: 5%;
+}
+
+.footer__copyright {
+  margin-left: 5%;
+}
+
+.icon-link {
+  margin-top: 10px;
+  margin-left: 1%;
+  margin-right: 20%;
+}
+
+#icons-move {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  h3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  h4 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  h5 {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .footer__icons {
+    margin: 15px 0% 0 3.13%;
+    width: 93%;
+  }
+  .footer__heading {
+    margin-right: 0;
+    margin-top: 15px;
+  }
+  .footer__copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer__contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: 3%;
+  }
+  .footer__contact-paragraph {
+    margin-top: 0;
+  }
+  .footer__copyright {
+    margin-left: 3%;
+  }
+}
+
+.icon-link {
+  display: inline-block;
+  margin-top: 25px;
+  margin-left: 0;
+  margin-right: 10%;
+}
+
+.contact-emails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#icons-move {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 60%;
+}
+
+@media only screen and (min-width: 1440px) {
+  #icons-move {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .icon-link {
+    margin-top: 60px;
+    margin-right: 32px;
+  }
+  .footer__copyright {
+    margin-left: 180px;
+  }
+  .footer__nav {
+    margin-left: 12.5%;
+  }
+  .footer__heading {
+    margin-top: 48px;
+  }
+  .footer__icons {
+    margin-left: 0;
+    margin-top: 0;
+  }
+  #move-large {
+    margin-left: 0;
+  }
+  .footer__contact-heading {
+    margin-bottom: 24px;
+  }
+  #icons-move {
+    display: inline-block;
+    margin-left: 10%;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

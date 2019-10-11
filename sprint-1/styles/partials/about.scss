@@ -1,3 +1,7 @@
+@import "./breakpoints";
+@import "./colours";
+@import "./fonts";
+
 .about {
 	color: $paraText;
 	display: flex;
@@ -13,7 +17,6 @@
 		margin-bottom: 24px;
 	}
 	&__heading-one {
-		margin-top: 75px;
 		margin-bottom: 24px;
 	}
 	&__heading-two {
