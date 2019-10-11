@@ -54,6 +54,10 @@
   font-style: normal;
 }
 
+.footer * {
+  margin: 0;
+}
+
 .footer {
   width: 100vw;
   color: #fff;
@@ -69,46 +73,27 @@
 }
 
 .footer__nav {
-  width: 100%;
+  margin-top: 20px;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
-.footer__contacts {
-  margin-left: 5%;
+.footer__contact-emails {
+  margin-right: 3%;
+  margin-left: 3%;
 }
 
 .footer__contact-paragraph, .footer__copyright-text {
-  font-family: "AvenirThin";
+  font-family: "Avenir";
+  font-weight: lighter;
+  opacity: 0.9;
 }
 
 .footer__icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  width: 50%;
-  margin-bottom: 20px;
-  margin-left: 5%;
+  margin-top: 20px;
 }
 
-.footer__copyright {
-  margin-left: 5%;
-}
-
-.icon-link {
-  margin-top: 10px;
-  margin-left: 1%;
-  margin-right: 20%;
-}
-
-#icons-move {
+.footer #icons-move {
   width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -120,9 +105,16 @@
       flex-wrap: wrap;
 }
 
-#bandsite-logo {
-  display: none;
-  position: relative;
+.footer #bandsite-logo {
+  z-index: -1;
+}
+
+.footer .icon-link {
+  height: 20px;
+}
+
+.footer #middle-icon {
+  margin: 0 4%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -146,13 +138,8 @@
     font-size: 12px;
     line-height: 20px;
   }
-  .footer__icons {
-    margin: 15px 0% 0 3.13%;
-    width: 93%;
-  }
   .footer__heading {
     margin-right: 0;
-    margin-top: 15px;
   }
   .footer__copyright {
     display: -webkit-box;
@@ -175,50 +162,44 @@
             flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-left: 3%;
   }
   .footer__contact-paragraph {
     margin-top: 0;
   }
-  .footer__copyright {
-    margin-left: 3%;
+  .icon-link {
+    display: inline-block;
+    margin-top: 25px;
+    margin-left: 0;
+    margin-right: 10%;
   }
-}
-
-.icon-link {
-  display: inline-block;
-  margin-top: 25px;
-  margin-left: 0;
-  margin-right: 10%;
-}
-
-.contact-emails {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-#bandsite-logo {
-  display: inline-block;
-  bottom: 22px;
-  left: 160px;
-}
-
-#icons-move {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 60%;
+  .contact-emails {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 3.125%;
+  }
+  #icons-move {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 60%;
+  }
+  #bandsite-logo {
+    bottom: 22px;
+    left: 160px;
+    z-index: 1;
+    float: right;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
   .icon-link {
-    margin-top: 60px;
+    margin-top: 48px;
     margin-right: 32px;
   }
   .footer__copyright {
@@ -226,25 +207,21 @@
   }
   .footer__nav {
     margin-left: 12.5%;
+    margin-right: 12.5%;
   }
   .footer__heading {
     margin-top: 48px;
   }
-  .footer__icons {
-    margin-left: 0;
-    margin-top: 0;
-  }
-  #move-large {
-    margin-left: 0;
-  }
   .footer__contact-heading {
     margin-bottom: 24px;
+    margin-top: 0;
   }
-}
-
-#bandsite-logo {
-  display: inline-block;
-  bottom: 22px;
-  left: 345px;
+  #bandsite-logo {
+    left: 346px;
+  }
+  .footer__contact-emails {
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+  }
 }
 /*# sourceMappingURL=footer.css.map */

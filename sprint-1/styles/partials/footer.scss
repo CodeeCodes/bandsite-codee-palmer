@@ -1,7 +1,9 @@
 @import "./breakpoints";
 @import "./colours";
 @import "./fonts";
-
+.footer * {
+	margin: 0;
+}
 .footer {
 	width: 100vw;
 	color: #fff;
@@ -11,43 +13,40 @@
 	margin-top: 12px;
 
 	&__nav {
-		width: 100%;
+		margin-top: 20px;
+		margin-left: 3%;
+		margin-right: 3%;
 	}
 
-	&__contacts {
-		margin-left: 5%;
+	&__contact-emails {
+		margin-right: 3%;
+		margin-left: 3%;
 	}
 	&__contact-paragraph,
 	&__copyright-text {
-		font-family: "AvenirThin";
+		font-family: "Avenir";
+		font-weight: lighter;
+		opacity: 0.9;
 	}
 	&__icons {
+		margin-top: 20px;
+	}
+
+	#icons-move {
+		width: 70%;
 		display: flex;
-		flex-direction: row;
+		justify-content: space-evenly;
 		flex-wrap: wrap;
-		justify-content: flex-start;
-		width: 50%;
-		margin-bottom: 20px;
-		margin-left: 5%;
 	}
-	&__copyright {
-		margin-left: 5%;
+	#bandsite-logo {
+		z-index: -1;
 	}
-}
-.icon-link {
-	margin-top: 10px;
-	margin-left: 1%;
-	margin-right: 20%;
-}
-#icons-move {
-	width: 70%;
-	display: flex;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-}
-#bandsite-logo {
-	display: none;
-	position: relative;
+	.icon-link {
+		height: 20px;
+	}
+	#middle-icon {
+		margin: 0 4%;
+	}
 }
 @include medium {
 	h1 {
@@ -70,13 +69,11 @@
 		font-size: 12px;
 		line-height: 20px;
 	}
-	.footer__icons {
-		margin: 15px 0% 0 3.13%;
-		width: 93%;
-	}
+	// .footer__icons {
+	// 	margin: 15px 0% 0 3.13%;
+	// }
 	.footer__heading {
 		margin-right: 0;
-		margin-top: 15px;
 	}
 	.footer__copyright {
 		display: flex;
@@ -87,40 +84,39 @@
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
-		margin-left: 3%;
 	}
 	.footer__contact-paragraph {
 		margin-top: 0;
 	}
-	.footer__copyright {
-		margin-left: 3%;
-	}
-}
-.icon-link {
-	display: inline-block;
-	margin-top: 25px;
-	margin-left: 0;
-	margin-right: 10%;
-}
-.contact-emails {
-	display: flex;
-	flex-wrap: wrap;
-}
-#bandsite-logo {
-	display: inline-block;
-	bottom: 22px;
-	left: 160px;
-}
 
-#icons-move {
-	display: flex;
-	justify-content: center;
-	width: 60%;
+	.icon-link {
+		display: inline-block;
+		margin-top: 25px;
+		margin-left: 0;
+		margin-right: 10%;
+	}
+	.contact-emails {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 3.125%;
+	}
+
+	#icons-move {
+		display: flex;
+		justify-content: center;
+		width: 60%;
+	}
+	#bandsite-logo {
+		bottom: 22px;
+		left: 160px;
+		z-index: 1;
+		float: right;
+	}
 }
 
 @include large {
 	.icon-link {
-		margin-top: 60px;
+		margin-top: 48px;
 		margin-right: 32px;
 	}
 	.footer__copyright {
@@ -128,23 +124,21 @@
 	}
 	.footer__nav {
 		margin-left: 12.5%;
+		margin-right: 12.5%;
 	}
 	.footer__heading {
 		margin-top: 48px;
 	}
-	.footer__icons {
-		margin-left: 0;
-		margin-top: 0;
-	}
-	#move-large {
-		margin-left: 0;
-	}
+
 	.footer__contact-heading {
 		margin-bottom: 24px;
+		margin-top: 0;
 	}
-}
-#bandsite-logo {
-	display: inline-block;
-	bottom: 22px;
-	left: 345px;
+	#bandsite-logo {
+		left: 346px;
+	}
+	.footer__contact-emails {
+		margin-left: 12.5%;
+		margin-right: 12.5%;
+	}
 }
