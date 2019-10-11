@@ -37,6 +37,26 @@
 }
 
 @include medium {
+	h1 {
+		text-size: 60px;
+		line-height: 68px;
+	}
+	h2 {
+		text-size: 24px;
+		line-height: 32px;
+	}
+	h3 {
+		text-size: 16px;
+		line-height: 24px;
+	}
+	h4 {
+		text-size: 14px;
+		line-height: 20px;
+	}
+	h5 {
+		text-size: 12px;
+		line-height: 20px;
+	}
 	.footer__icons {
 		margin: 15px 4%;
 	}
@@ -71,4 +91,6 @@
 .contact-emails {
 	display: flex;
 	flex-wrap: wrap;
+}
+@include large {
 }

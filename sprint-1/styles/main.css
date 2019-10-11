@@ -94,9 +94,9 @@ h5 {
 }
 
 .hero {
-  height: 263px;
+  height: 263;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
 }
 
 .hero__image {
@@ -106,13 +106,33 @@ h5 {
 
 .hero__heading {
   color: #fff;
-  position: relative;
+  position: absolute;
   top: 155px;
   left: 5%;
   margin: 0;
 }
 
 @media only screen and (min-width: 768px) {
+  h1 {
+    text-size: 60px;
+    line-height: 68px;
+  }
+  h2 {
+    text-size: 24px;
+    line-height: 32px;
+  }
+  h3 {
+    text-size: 16px;
+    line-height: 24px;
+  }
+  h4 {
+    text-size: 14px;
+    line-height: 20px;
+  }
+  h5 {
+    text-size: 12px;
+    line-height: 20px;
+  }
   .hero {
     height: 100%;
   }
@@ -124,9 +144,11 @@ h5 {
 @media only screen and (min-width: 1440px) {
   .hero {
     height: 100%;
+    overflow: hidden;
   }
   .hero__heading {
     top: 335px;
+    margin-left: 12.5%;
   }
 }
 
@@ -163,6 +185,26 @@ h5 {
 }
 
 @media only screen and (min-width: 768px) {
+  h1 {
+    text-size: 60px;
+    line-height: 68px;
+  }
+  h2 {
+    text-size: 24px;
+    line-height: 32px;
+  }
+  h3 {
+    text-size: 16px;
+    line-height: 24px;
+  }
+  h4 {
+    text-size: 14px;
+    line-height: 20px;
+  }
+  h5 {
+    text-size: 12px;
+    line-height: 20px;
+  }
   .gallery__photo-image {
     width: 29%;
     height: 126px;
@@ -241,6 +283,26 @@ h5 {
 }
 
 @media only screen and (min-width: 768px) {
+  h1 {
+    text-size: 60px;
+    line-height: 68px;
+  }
+  h2 {
+    text-size: 24px;
+    line-height: 32px;
+  }
+  h3 {
+    text-size: 16px;
+    line-height: 24px;
+  }
+  h4 {
+    text-size: 14px;
+    line-height: 20px;
+  }
+  h5 {
+    text-size: 12px;
+    line-height: 20px;
+  }
   .header {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -307,6 +369,26 @@ h5 {
 }
 
 @media only screen and (min-width: 768px) {
+  h1 {
+    text-size: 60px;
+    line-height: 68px;
+  }
+  h2 {
+    text-size: 24px;
+    line-height: 32px;
+  }
+  h3 {
+    text-size: 16px;
+    line-height: 24px;
+  }
+  h4 {
+    text-size: 14px;
+    line-height: 20px;
+  }
+  h5 {
+    text-size: 12px;
+    line-height: 20px;
+  }
   .gallery__photo-image {
     width: 29%;
     height: 126px;
@@ -385,6 +467,26 @@ h5 {
 }
 
 @media only screen and (min-width: 768px) {
+  h1 {
+    text-size: 60px;
+    line-height: 68px;
+  }
+  h2 {
+    text-size: 24px;
+    line-height: 32px;
+  }
+  h3 {
+    text-size: 16px;
+    line-height: 24px;
+  }
+  h4 {
+    text-size: 14px;
+    line-height: 20px;
+  }
+  h5 {
+    text-size: 12px;
+    line-height: 20px;
+  }
   .about {
     margin-left: 4%;
     margin-right: 4%;
@@ -429,8 +531,7 @@ h5 {
     margin-right: 12.5%;
   }
   .about__heading-one {
-    margin-left: 12.5%;
-    margin-top: 70px;
+    margin-top: 48px;
   }
   .about__image {
     height: 450px;
@@ -499,6 +600,26 @@ h5 {
 }
 
 @media only screen and (min-width: 768px) {
+  h1 {
+    text-size: 60px;
+    line-height: 68px;
+  }
+  h2 {
+    text-size: 24px;
+    line-height: 32px;
+  }
+  h3 {
+    text-size: 16px;
+    line-height: 24px;
+  }
+  h4 {
+    text-size: 14px;
+    line-height: 20px;
+  }
+  h5 {
+    text-size: 12px;
+    line-height: 20px;
+  }
   .footer__icons {
     margin: 15px 4%;
   }
