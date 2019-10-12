@@ -97,8 +97,9 @@ h5 {
 }
 
 .hero__image {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .hero__heading {
@@ -130,22 +131,21 @@ h5 {
     font-size: 12px;
     line-height: 20px;
   }
-  .hero {
-    height: 100%;
-  }
   .hero__heading {
     top: 220px;
   }
+  .hero__image {
+    height: 400px;
+  }
 }
 
-@media only screen and (min-width: 1440px) {
-  .hero {
-    height: 100%;
-    overflow: hidden;
-  }
+@media only screen and (min-width: 768px) and (min-width: 1440px) {
   .hero__heading {
     top: 335px;
     margin-left: 12.5%;
+  }
+  .hero__image {
+    height: 670px;
   }
 }
 
@@ -240,8 +240,6 @@ h5 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: fixed;
-  z-index: 1;
 }
 
 .header__logo {
@@ -572,12 +570,13 @@ h5 {
 
 .icon-link {
   height: 20px;
+  margin-right: 5%;
 }
 
 @media only screen and (min-width: 768px) {
   h1 {
-    font-size: 36px;
-    line-height: 44px;
+    font-size: 60px;
+    line-height: 68px;
   }
   h2 {
     font-size: 24px;

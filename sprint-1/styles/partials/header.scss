@@ -6,8 +6,6 @@
 	background-color: $navBackground;
 	display: flex;
 	flex-direction: column;
-	position: fixed;
-	z-index: 1;
 
 	&__logo {
 		margin-top: 16px;

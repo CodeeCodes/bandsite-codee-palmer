@@ -4,8 +4,9 @@
 	position: relative;
 
 	&__image {
-		height: 100vh;
+		height: 100%;
 		width: 100vw;
+		background-color: rgba(0, 0, 0, 0.8);
 	}
 
 	&__heading {
@@ -38,22 +39,21 @@
 		font-size: 12px;
 		line-height: 20px;
 	}
-	.hero {
-		height: 100%;
 
-		&__heading {
-			top: 220px;
-		}
-	}
-}
-
-@include large {
-	.hero {
-		height: 100%;
-		overflow: hidden;
-	}
 	.hero__heading {
-		top: 335px;
-		margin-left: 12.5%;
+		top: 220px;
+	}
+	.hero__image {
+		height: 400px;
+	}
+
+	@include large {
+		.hero__heading {
+			top: 335px;
+			margin-left: 12.5%;
+		}
+		.hero__image {
+			height: 670px;
+		}
 	}
 }
