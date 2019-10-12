@@ -1,9 +1,9 @@
 @import "./breakpoints";
 @import "./colours";
 @import "./fonts";
-.footer * {
-	margin: 0;
-}
+// .footer * {
+// 	margin: 0;
+// }
 .footer {
 	width: 100vw;
 	color: #fff;
@@ -11,25 +11,13 @@
 	display: flex;
 	flex-direction: column;
 	margin-top: 12px;
+	padding: 24px 3%;
 
-	&__nav {
-		margin-top: 20px;
-		margin-left: 3%;
-		margin-right: 3%;
-	}
-
-	&__contact-emails {
-		margin-right: 3%;
-		margin-left: 3%;
-	}
 	&__contact-paragraph,
 	&__copyright-text {
 		font-family: "Avenir";
 		font-weight: lighter;
 		opacity: 0.9;
-	}
-	&__icons {
-		margin-top: 20px;
 	}
 
 	#icons-move {
@@ -38,14 +26,11 @@
 		justify-content: space-evenly;
 		flex-wrap: wrap;
 	}
-	#bandsite-logo {
-		z-index: -1;
-	}
+	// #bandsite-logo {
+	// 	display: none;
+	// }
 	.icon-link {
 		height: 20px;
-	}
-	#middle-icon {
-		margin: 0 4%;
 	}
 }
 @include medium {
@@ -69,16 +54,18 @@
 		font-size: 12px;
 		line-height: 20px;
 	}
-	// .footer__icons {
-	// 	margin: 15px 0% 0 3.13%;
-	// }
+
 	.footer__heading {
 		margin-right: 0;
+		display: inline-block;
 	}
 	.footer__copyright {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
+	}
+	.footer__copyright-text {
+		margin-right: 3.125;
 	}
 	.footer__contacts {
 		display: flex;
@@ -91,14 +78,12 @@
 
 	.icon-link {
 		display: inline-block;
-		margin-top: 25px;
-		margin-left: 0;
-		margin-right: 10%;
+		margin-left: 5%;
 	}
-	.contact-emails {
+	.footer__contact-emails {
 		display: flex;
 		flex-wrap: wrap;
-		margin: 0 3.125%;
+		justify-content: space-between;
 	}
 
 	#icons-move {
@@ -107,14 +92,15 @@
 		width: 60%;
 	}
 	#bandsite-logo {
-		bottom: 22px;
-		left: 160px;
+		position: relative;
+		left: 28.2%;
 		z-index: 1;
-		float: right;
 	}
 }
 
 @include large {
+	.footer {
+	}
 	.icon-link {
 		margin-top: 48px;
 		margin-right: 32px;
@@ -122,10 +108,7 @@
 	.footer__copyright {
 		margin-left: 180px;
 	}
-	.footer__nav {
-		margin-left: 12.5%;
-		margin-right: 12.5%;
-	}
+
 	.footer__heading {
 		margin-top: 48px;
 	}
@@ -136,9 +119,5 @@
 	}
 	#bandsite-logo {
 		left: 346px;
-	}
-	.footer__contact-emails {
-		margin-left: 12.5%;
-		margin-right: 12.5%;
 	}
 }
