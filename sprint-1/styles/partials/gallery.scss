@@ -1,7 +1,3 @@
-@import "./breakpoints";
-@import "./colours";
-@import "./fonts";
-
 .gallery {
 	display: flex;
 	flex-direction: row;
@@ -42,7 +38,7 @@
 		line-height: 20px;
 	}
 	.gallery__photo-image {
-		width: 29%;
+		width: 29.167%;
 		height: 126px;
 		margin: 12px 1.56%;
 		justify-content: space-evenly;
@@ -57,7 +53,7 @@
 		margin-bottom: 28px;
 	}
 	.gallery__photo-image {
-		width: 24%;
+		width: 23.889%;
 		height: 193px;
 		margin: 12px;
 	}
