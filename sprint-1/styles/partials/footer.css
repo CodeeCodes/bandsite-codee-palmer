@@ -69,6 +69,10 @@
   padding: 24px 3%;
 }
 
+.footer__icons {
+  position: relative;
+}
+
 .footer__contact-paragraph, .footer__copyright-text {
   font-family: "Avenir";
   font-weight: lighter;
@@ -85,6 +89,10 @@
           justify-content: space-evenly;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.footer .bandsite-logo {
+  z-index: -10;
 }
 
 .footer .icon-link {
@@ -167,10 +175,11 @@
             justify-content: center;
     width: 60%;
   }
-  #bandsite-logo {
-    position: relative;
-    left: 28.2%;
+  .bandsite-logo {
     z-index: 1;
+    position: absolute;
+    left: 83%;
+    top: 44px;
   }
 }
 
@@ -189,8 +198,9 @@
     margin-bottom: 24px;
     margin-top: 0;
   }
-  #bandsite-logo {
-    left: 346px;
+  .bandsite-logo {
+    left: 81%;
+    top: 63px;
   }
 }
 /*# sourceMappingURL=footer.css.map */
