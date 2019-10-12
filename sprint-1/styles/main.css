@@ -91,7 +91,7 @@ h5 {
 }
 
 .hero {
-  height: 263;
+  height: 183px;
   width: 100vw;
   position: relative;
 }
@@ -131,21 +131,21 @@ h5 {
     font-size: 12px;
     line-height: 20px;
   }
-  .hero__heading {
-    top: 220px;
-  }
-  .hero__image {
+  .hero {
     height: 400px;
+  }
+  .hero .hero__heading {
+    top: 220px;
   }
 }
 
 @media only screen and (min-width: 768px) and (min-width: 1440px) {
-  .hero__heading {
+  .hero {
+    height: 670px;
+  }
+  .hero .hero__heading {
     top: 335px;
     margin-left: 12.5%;
-  }
-  .hero__image {
-    height: 670px;
   }
 }
 
@@ -243,7 +243,7 @@ h5 {
 }
 
 .header__logo {
-  margin-top: 16px;
+  padding-top: 10px;
 }
 
 .header__menu {
@@ -270,6 +270,7 @@ h5 {
 
 #item-active {
   border-bottom: 2px solid #fff;
+  padding-bottom: 6px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -322,7 +323,7 @@ h5 {
   .header__logo {
     margin-left: 12.5%;
   }
-  .header__menu-item {
+  .header__logo .header__menu-item {
     margin: 0 0 0 56px;
   }
 }

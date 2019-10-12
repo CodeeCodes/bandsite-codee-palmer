@@ -1,5 +1,5 @@
 .hero {
-	height: 263;
+	height: 183px;
 	width: 100vw;
 	position: relative;
 
@@ -39,21 +39,21 @@
 		font-size: 12px;
 		line-height: 20px;
 	}
-
-	.hero__heading {
-		top: 220px;
-	}
-	.hero__image {
+	.hero {
 		height: 400px;
-	}
 
-	@include large {
 		.hero__heading {
-			top: 335px;
-			margin-left: 12.5%;
+			top: 220px;
 		}
-		.hero__image {
+	}
+	@include large {
+		.hero {
 			height: 670px;
+
+			.hero__heading {
+				top: 335px;
+				margin-left: 12.5%;
+			}
 		}
 	}
 }

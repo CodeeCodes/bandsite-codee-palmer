@@ -8,7 +8,7 @@
 	flex-direction: column;
 
 	&__logo {
-		margin-top: 16px;
+		padding-top: 10px;
 	}
 	&__menu {
 		display: flex;
@@ -31,6 +31,7 @@
 
 #item-active {
 	border-bottom: 2px solid #fff;
+	padding-bottom: 6px;
 }
 @include medium {
 	h1 {
@@ -76,8 +77,9 @@
 @include large {
 	.header__logo {
 		margin-left: 12.5%;
-	}
-	.header__menu-item {
-		margin: 0 0 0 56px;
+
+		.header__menu-item {
+			margin: 0 0 0 56px;
+		}
 	}
 }
