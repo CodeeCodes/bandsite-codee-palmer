@@ -8,13 +8,16 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
+	background-color: $textBackground;
 
 	&__photo-image {
 		width: 90%;
 		margin: 8px 5%;
 	}
 	&__heading {
-		margin-left: 5%;
+		margin: 0;
+		padding: 10px 5%;
+		background-color: $textBackground;
 	}
 }
 @include medium {
@@ -46,7 +49,7 @@
 	}
 
 	.gallery__heading {
-		margin-left: 4%;
+		padding-left: 4%;
 	}
 }
 @include large {
@@ -61,6 +64,6 @@
 	}
 
 	.gallery__heading {
-		margin-left: 12.5%;
+		padding-left: 12.5%;
 	}
 }
