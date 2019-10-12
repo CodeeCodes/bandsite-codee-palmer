@@ -6,6 +6,7 @@
 	flex-direction: column;
 	margin-top: 12px;
 	padding: 24px 3%;
+
 	&__nav {
 		position: relative;
 	}
@@ -78,6 +79,7 @@
 	.icon-link {
 		display: inline-block;
 		margin-left: 5%;
+		margin-right: 0;
 	}
 	.footer__contact-emails {
 		display: flex;
@@ -87,14 +89,14 @@
 	.bandsite-logo {
 		display: unset;
 		position: absolute;
-		left: 83%;
-		top: 44px;
+		left: 84%;
+		top: 80px;
 	}
 }
 
 @include large {
 	.footer {
-		padding-left: 12.5%;
+		padding: 0 12.5%;
 	}
 	.footer__contact-emails {
 		justify-content: flex-start;
@@ -116,7 +118,7 @@
 		margin-top: 0;
 	}
 	.bandsite-logo {
-		left: 78%;
-		top: 63px;
+		left: 89%;
+		top: 73px;
 	}
 }
