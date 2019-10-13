@@ -94,7 +94,6 @@ h5 {
   width: 100vw;
   height: 80px;
   color: #fff;
-  font-family: "Avenir";
   background-color: #323232;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -255,7 +254,6 @@ h5 {
 
 .about {
   color: #323232;
-  font-family: "AvenirBold";
   font-weight: bolder;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -283,7 +281,6 @@ h5 {
 .about__heading-two {
   margin-top: 0;
   margin-bottom: 34px;
-  width: 90%;
 }
 
 .about__heading-three {
@@ -297,7 +294,6 @@ h5 {
 }
 
 .paragraph-text {
-  font-family: "Avenir";
   font-weight: lighter;
   opacity: 0.9;
 }
@@ -376,6 +372,7 @@ h5 {
   .about__heading-two {
     margin-top: 48px;
     margin-bottom: 40px;
+    width: 80%;
   }
   .about__heading-three {
     margin-top: 0;
@@ -505,7 +502,6 @@ h5 {
 }
 
 .footer__contact-paragraph, .footer__copyright-text {
-  font-family: "Avenir";
   font-weight: lighter;
   opacity: 0.9;
 }
