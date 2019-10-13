@@ -35,8 +35,8 @@
 }
 @include medium {
 	h1 {
-		font-size: 60px;
-		line-height: 68px;
+		font-size: 36px;
+		line-height: 44px;
 	}
 	h2 {
 		font-size: 24px;
@@ -78,9 +78,8 @@
 @include large {
 	.header__logo {
 		margin-left: 12.5%;
-
-		.header__menu-item {
-			margin: 0 0 0 56px;
-		}
+	}
+	.header__menu-item {
+		margin: 0 0 0 56px;
 	}
 }
