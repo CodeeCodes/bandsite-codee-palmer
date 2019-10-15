@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="../styles/main.css" />
+		<title>Bandsite</title>
+	</head>
+	<body>
+		<nav class="header">
+			<img class="header__logo" src="../assets/Logo/Logo-bandsite.svg" alt="" />
+			<ul class="header__menu">
+				<li class="header__menu-item">
+					<a class="header__menu-link" href="../index.html">Biography</a>
+				</li>
+				<li class="header__menu-item" id="item-active">
+					<a class="header__menu-link" id="smaller-link" href="#">Shows</a>
+				</li>
+			</ul>
+		</nav>
+		<!-----------------------start of hero --------------------->
+
+		<section class="hero">
+			<img
+				class="hero__image"
+				src="../assets/Images/hero2.jpg"
+				alt="Music image"
+			/>
+			<h1 class="hero__heading">
+				Gaspard Auge & <br />
+				Xavier de Ronsay
+			</h1>
+		</section>
+
+		<!--------------------start of table--------------------------------->
+		<table class="shows-table"></table>
+		<script src="../javascript/showsTable.js"></script>
+
+		<!--------------------start of footer--------------------------------->
+
+		<footer class="footer">
+			<nav class="footer__nav">
+				<h1 class="footer__heading">Get In Touch</h1>
+				<a class="icon-link"
+					><img
+						src="../assets/Icons/SVG/Icon-instagram.svg"
+						alt="Instagram icon"
+				/></a>
+				<a class="icon-link" id="middle-icon"
+					><img src="../assets/Icons/SVG/Icon-facebook.svg" alt="Facebook icon"
+				/></a>
+				<a class="icon-link"
+					><img src="../assets/Icons/SVG/Icon-twitter.svg" alt="Twitter icon"
+				/></a>
+				<img
+					class="bandsite-logo"
+					src="../assets/Logo/Logo-bandsite.svg"
+					alt="Bandsite logo"
+				/>
+			</nav>
+			<div class="footer__contact-emails">
+				<div class="footer__contacts">
+					<h4 class="footer__contact-heading">
+						Richard Rovner <br />The Bees Knees Management
+					</h4>
+					<h4 class="footer__contact-paragraph">
+						60 King Street West<br />
+						Toronto, Ontario M5V 1L7<br />
+						<br />info@thebeesknees.com
+					</h4>
+				</div>
+				<div class="footer__contacts">
+					<h4 class="footer__contact-heading">
+						Marsha Vlasic <br />Artist Group International
+					</h4>
+					<h5 class="footer__contact-paragraph">
+						booking agent for<br />US/ South America/ Japan<br />
+						<br />marsha.vlasic@artistgrp.com
+					</h5>
+				</div>
+				<div class="footer__contacts">
+					<h4 class="footer__contact-heading">
+						Russel Wartby <br />William Morrir Entertainment
+					</h4>
+					<h5 class="footer__contact-paragraph">
+						Booking Agent for<br />
+						UK/ EU/ AU<br />
+						<br />RLW@wmeentertainment.com
+					</h5>
+				</div>
+			</div>
+			<h5 class="footer__copyright-text">
+				Copyright The Bees Knees © 2018 All Rights Reserved
+			</h5>
+		</footer>
+	</body>
+</html>
