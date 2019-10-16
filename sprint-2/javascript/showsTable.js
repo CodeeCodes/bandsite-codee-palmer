@@ -28,6 +28,7 @@ var shows = [
 ];
 function createTable(table, shows) {
 	for (var show of shows) {
+		createTableHead(table, showKeys);
 		var row = table.insertRow();
 		for (key in show) {
 			var cell = row.insertCell();
@@ -47,10 +48,9 @@ function createTableHead(table, shows) {
 		row.appendChild(td);
 	}
 }
-
 var table = document.querySelector("table");
-console.log(table);
 var showKeys = Object.keys(shows[0]);
+
 // function invocation
 createTable(table, shows); // actually pass the students array
-// createTableHead(table, showKeys);
+createTableHead(table, showKeys);
