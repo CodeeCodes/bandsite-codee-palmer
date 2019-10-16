@@ -1,3 +1,26 @@
-.shows_table {
-	display: flex;
+.shows__table {
+	margin: 0 5%;
+}
+.shows__table-heading {
+	margin: 0 5%;
+}
+
+tbody tr th {
+	display: block;
+	text-align: left;
+}
+.shows__table,
+tbody tr td {
+	display: block;
+	text-align: left;
+}
+
+.shows__table button {
+	display: block;
+	width: 90vw;
+	height: 30px;
+	background-color: black;
+	border-radius: 4px;
+	text-align: center;
+	color: white;
 }
