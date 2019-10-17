@@ -45,10 +45,19 @@ function createTable(table, shows) {
 			cell.appendChild(text);
 			if (key === "date") {
 				let dateClass = document.querySelectorAll("td");
-				console.log(dateClass);
+				// console.log(dateClass);
 				for (i = 0; i < dateClass.length; i++) {
 					if (i % 4 === 0) {
 						dateClass[i].classList.add("bolded-date");
+					}
+				}
+			}
+			if (key === "date") {
+				let dateClassTwo = document.querySelectorAll("td");
+				// console.log(dateClass);
+				for (i = 0; i < dateClassTwo.length; i++) {
+					if (i % 4 === 3) {
+						dateClassTwo[i].classList.add("underline-button");
 					}
 				}
 			}
