@@ -482,6 +482,106 @@ h5 {
   }
 }
 
+/*media query for mobile using max width so that it doesn't have a break at min-width*/
+/*media query for tablet*/
+/*media query for  landscape, large pixel density desktop*/
+.shows__table,
+.shows__table-heading {
+  margin: 0 5%;
+}
+
+.shows__table tbody tr,
+.shows__table-heading tbody tr {
+  display: block;
+  text-align: left;
+  padding-bottom: 15px;
+}
+
+.shows__table button,
+.shows__table-heading button {
+  display: block;
+  width: 90vw;
+  height: 30px;
+  background-color: #323232;
+  border-radius: 4px;
+  text-align: center;
+  color: #fff;
+}
+
+.table-header {
+  display: block;
+  text-align: left;
+  padding: 0;
+  font-family: "AvenirBold";
+  opacity: 0.3;
+}
+
+.bolded-date {
+  font-family: "AvenirBold";
+}
+
+.underline-button {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #afafaf;
+}
+
+.table__heading-div {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .shows__table tbody tr {
+    display: inline-block;
+    padding-right: 5%;
+  }
+  .shows__table button {
+    width: 160px;
+  }
+  .shows__table .table-header {
+    display: none;
+  }
+  .shows__table tbody {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .table__heading-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .hidden-heading {
+    margin-left: 10%;
+  }
+  .underline-button {
+    display: inline-block;
+    width: 160px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .shows__table {
+    margin-left: 30%;
+    margin-right: 12.5%;
+  }
+}
+
 .footer {
   width: 100vw;
   color: #fff;
@@ -635,46 +735,5 @@ h5 {
     top: 58px;
     width: 120px;
   }
-}
-
-.shows__table,
-.shows__table-heading {
-  margin: 0 5%;
-}
-
-.shows__table tbody tr th,
-.shows__table-heading tbody tr th {
-  display: block;
-  text-align: left;
-  padding: 0;
-  font-family: "AvenirBold";
-  opacity: 0.3;
-}
-
-.shows__table tbody tr td,
-.shows__table-heading tbody tr td {
-  display: block;
-  text-align: left;
-  padding-bottom: 15px;
-}
-
-.shows__table button,
-.shows__table-heading button {
-  display: block;
-  width: 90vw;
-  height: 30px;
-  background-color: #323232;
-  border-radius: 4px;
-  text-align: center;
-  color: #fff;
-}
-
-.bolded-date {
-  font-family: "AvenirBold";
-}
-
-.underline-button {
-  padding-bottom: 15px;
-  border-bottom: 1px solid #afafaf;
 }
 /*# sourceMappingURL=main.css.map */

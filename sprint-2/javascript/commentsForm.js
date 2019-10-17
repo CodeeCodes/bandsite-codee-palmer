@@ -1,4 +1,20 @@
-const comments = [];
+const comments = [
+	{
+		name: "Micheal Lyons",
+		comment:
+			"They blew the roof off at their last show, once everyone started figuring out they were going.This is still simply the greatest opening of a concert I have EVER witnessed"
+	},
+	{
+		name: "Gary Wong",
+		comment:
+			"Every time I see him shred I feel so motivated to get off my couch and hop on my board. He's so talented! I wish I could ride like him one day so I can really enjoy myself"
+	},
+	{
+		name: "Theodore Duncan",
+		comment:
+			"How can someone be soo good!!! You can tell he lives for this and loves to do it everyday. Every time I see him I get instantly happy! He's definitely my favorite ever"
+	}
+];
 
 function validateData() {
 	let name = event.target.name.value;
@@ -22,9 +38,9 @@ form.addEventListener("submit", (comments) => {
 		// need only the keys for creating table head
 		let rsvpKeys = Object.keys(comments[0]);
 
-		createTable(table, comment);
+		createTableTablet(table, comment);
 		if (comments.length === 1) {
-			createTableHead(table, showKeys);
+			createTableHeadTablet(table, showKeys);
 		}
 	} else {
 		let alert = document.querySelector(".alert");

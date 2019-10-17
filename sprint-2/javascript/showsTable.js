@@ -45,7 +45,6 @@ function createTable(table, shows) {
 			cell.appendChild(text);
 			if (key === "date") {
 				let dateClass = document.querySelectorAll("td");
-				// console.log(dateClass);
 				for (i = 0; i < dateClass.length; i++) {
 					if (i % 4 === 0) {
 						dateClass[i].classList.add("bolded-date");
@@ -54,11 +53,18 @@ function createTable(table, shows) {
 			}
 			if (key === "date") {
 				let dateClassTwo = document.querySelectorAll("td");
-				console.log(dateClassTwo);
 				for (i = 0; i < dateClassTwo.length; i++) {
 					if (i % 4 === 3) {
 						dateClassTwo[i].classList.add("underline-button");
 					}
+				}
+				console.log(dateClassTwo);
+			}
+
+			if (key === "location") {
+				let buttonClassThree = document.querySelectorAll("th");
+				for (i = 0; i < buttonClassThree.length; i++) {
+					buttonClassThree[i].classList.add("table-header");
 				}
 			}
 
@@ -76,8 +82,6 @@ function createTable(table, shows) {
 }
 function createTableHead(shows, row) {
 	let variable = count % 3;
-	// let tHead = table.createTHead();
-	// let row = tHead.insertRow();
 	let th = document.createElement("th");
 	let text = document.createTextNode(shows[variable]);
 	th.appendChild(text);
@@ -87,8 +91,6 @@ function createTableHead(shows, row) {
 const table = document.querySelector("table");
 const showKeys = Object.keys(shows[0]);
 let count = 3;
-// function invocation
-createTable(table, shows); // actually pass the students array
 
 // function createTableTablet(table, shows) {
 // 	for (const show of shows) {
@@ -99,7 +101,6 @@ createTable(table, shows); // actually pass the students array
 // 			cell.appendChild(text);
 // 			if (key === "date") {
 // 				let dateClass = document.querySelectorAll("td");
-// 				console.log(dateClass);
 // 				for (i = 0; i < dateClass.length; i++) {
 // 					if (i % 4 === 0) {
 // 						dateClass[i].classList.add("bolded-date");
@@ -119,13 +120,17 @@ createTable(table, shows); // actually pass the students array
 // 		}
 // 	}
 // }
-// function createTableHeadTablet(shows, row) {
-// 	let tHead = table.createTHead();
-// 	let row = tHead.insertRow();
+// function createTableHeadTablet(table, shows) {
+// 	let tHeadTablet = table.createTHead();
+// 	let row = tHeadTablet.insertRow();
 // 	let th = document.createElement("th");
-// 	let text = document.createTextNode(shows[variable]);
+// 	let text = document.createTextNode(shows[0]);
 // 	th.appendChild(text);
 // 	row.appendChild(th);
 // }
-// createTableTablet(table, shows);
-// createTableHeadTablet(table, showKeys);
+
+// const tableTablet = document.querySelector("shows__table-two");
+// createTableTablet(tableTablet, shows);
+
+// function invocation
+createTable(table, shows); // actually pass the students array
