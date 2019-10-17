@@ -7,13 +7,18 @@
 		display: block;
 		text-align: left;
 		padding-bottom: 15px;
+		padding-left: 0;
+	}
+	& tbody tr td {
+		padding-left: 0;
 	}
 
 	& button {
 		display: block;
 		width: 90vw;
 		height: 30px;
-		// padding: 0;
+		padding: 0;
+		border: 0;
 		background-color: $primeCta;
 		border-radius: 4px;
 		text-align: center;
@@ -29,9 +34,11 @@
 }
 .bolded-date {
 	font-family: "AvenirBold";
+	padding-left: 0;
 }
 .underline-button {
 	padding-bottom: 15px;
+	padding-left: 0;
 	border-bottom: 1px solid $textLabel;
 }
 .table__heading-div {
@@ -41,7 +48,9 @@
 	.shows__table {
 		& tbody tr {
 			display: inline-block;
-			padding-right: 5%;
+			width: 25%;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+			padding-top: 15px;
 		}
 		& button {
 			width: 160px;
@@ -54,24 +63,34 @@
 			justify-content: space-between;
 			flex-direction: row;
 			flex-wrap: wrap;
+			width: 720px;
 		}
 	}
 
 	.table__heading-div {
 		display: flex;
 		flex-direction: row;
-		justify-content: flex-start;
+		justify-content: space-around;
+		width: 75%;
+		opacity: 0.3;
+		font-family: "AvenirBold";
 	}
 	.hidden-heading {
-		margin-left: 10%;
+		margin-right: 52px;
 	}
 
 	.underline-button {
 		display: inline-block;
 		width: 160px;
 	}
+	.underline-button {
+		border-bottom: none;
+	}
 }
 @include large {
+	tbody {
+		width: 804px;
+	}
 	.shows__table {
 		margin-left: 30%;
 		margin-right: 12.5%;

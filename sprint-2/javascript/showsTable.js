@@ -58,7 +58,6 @@ function createTable(table, shows) {
 						dateClassTwo[i].classList.add("underline-button");
 					}
 				}
-				console.log(dateClassTwo);
 			}
 
 			if (key === "location") {
@@ -83,7 +82,7 @@ function createTable(table, shows) {
 function createTableHead(shows, row) {
 	let variable = count % 3;
 	let th = document.createElement("th");
-	let text = document.createTextNode(shows[variable]);
+	let text = document.createTextNode(shows[variable].toUpperCase());
 	th.appendChild(text);
 	row.appendChild(th);
 }
