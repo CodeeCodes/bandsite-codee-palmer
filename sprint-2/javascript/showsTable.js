@@ -43,7 +43,6 @@ function createTable(table, shows) {
 			let cell = row.insertCell();
 			let text = document.createTextNode(show[key]);
 			cell.appendChild(text);
-			console.log(key);
 			if (key === "date") {
 				let dateClass = document.querySelectorAll("td");
 				console.log(dateClass);
@@ -55,31 +54,69 @@ function createTable(table, shows) {
 			}
 
 			//creating a button after each iteration
-			if (count % 3 === 2) {
+			if (key === "location") {
 				let row = table.insertRow();
 				let btnCell = row.insertCell();
 				let btn = document.createElement("button");
 				btn.innerHTML = "CLICK ME";
 				btnCell.appendChild(btn);
 			}
-			count++; //iterating through heading function
+			count++;
 		}
 	}
-
-	function createTableHead(shows, row) {
-		let variable = count % 3;
-		// let tHead = table.createTHead();
-		// let row = tHead.insertRow();
-		let th = document.createElement("th");
-		let text = document.createTextNode(shows[variable]);
-		th.appendChild(text);
-		row.appendChild(th);
-	}
+}
+function createTableHead(shows, row) {
+	let variable = count % 3;
+	// let tHead = table.createTHead();
+	// let row = tHead.insertRow();
+	let th = document.createElement("th");
+	let text = document.createTextNode(shows[variable]);
+	th.appendChild(text);
+	row.appendChild(th);
 }
 
 const table = document.querySelector("table");
 const showKeys = Object.keys(shows[0]);
 let count = 3;
-
 // function invocation
 createTable(table, shows); // actually pass the students array
+
+// function createTableTablet(table, shows) {
+// 	for (const show of shows) {
+// 		for (key in shows) {
+// 			let row = table.insertRow();
+// 			let cell = row.insertCell();
+// 			let text = document.createTextNode(show[key]);
+// 			cell.appendChild(text);
+// 			if (key === "date") {
+// 				let dateClass = document.querySelectorAll("td");
+// 				console.log(dateClass);
+// 				for (i = 0; i < dateClass.length; i++) {
+// 					if (i % 4 === 0) {
+// 						dateClass[i].classList.add("bolded-date");
+// 					}
+// 				}
+// 			}
+
+// 			//creating a button after each iteration
+// 			if (key === "location") {
+// 				let row = table.insertRow();
+// 				let btnCell = row.insertCell();
+// 				let btn = document.createElement("button");
+// 				btn.innerHTML = "CLICK ME";
+// 				btnCell.appendChild(btn);
+// 			}
+// 			count++;
+// 		}
+// 	}
+// }
+// function createTableHeadTablet(shows, row) {
+// 	let tHead = table.createTHead();
+// 	let row = tHead.insertRow();
+// 	let th = document.createElement("th");
+// 	let text = document.createTextNode(shows[variable]);
+// 	th.appendChild(text);
+// 	row.appendChild(th);
+// }
+// createTableTablet(table, shows);
+// createTableHeadTablet(table, showKeys);
