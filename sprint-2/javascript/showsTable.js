@@ -54,7 +54,7 @@ function createTable(table, shows) {
 			}
 			if (key === "date") {
 				let dateClassTwo = document.querySelectorAll("td");
-				// console.log(dateClass);
+				console.log(dateClassTwo);
 				for (i = 0; i < dateClassTwo.length; i++) {
 					if (i % 4 === 3) {
 						dateClassTwo[i].classList.add("underline-button");
