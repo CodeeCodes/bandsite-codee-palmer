@@ -129,14 +129,20 @@
 
 		<form id="comments__section">
 			<h1 class="comments__heading">join the Conversation</h1>
-			<label>Name:</label><input type="text" name="name" placeholder="Name" />
-			<label> </label>Comments<textarea
-				rows="3"
-				cols="40"
-				name="comment"
-				placeholder="comments"
-			>
-			</textarea>
+			<div class=" comments__section-text">
+				<label>Name:</label><input type="text" name="name" placeholder="Name" />
+			</div>
+			<div class=" comments__section-text">
+				<label> Comments:</label>
+				<textarea
+					rows="3"
+					cols="40"
+					type="textarea"
+					name="comment"
+					placeholder="Comments"
+				>
+				</textarea>
+			</div>
 			<button type="submit" id="button__submit">SUBMIT</button>
 			<div id="comments"></div>
 		</form>

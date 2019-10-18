@@ -559,9 +559,12 @@ h5 {
   }
 }
 
-#comments {
+#comments__section {
+  margin: 0 4%;
+}
+
+label {
   display: block;
-  background-color: white;
 }
 
 /*media query for mobile using max width so that it doesn't have a break at min-width*/
