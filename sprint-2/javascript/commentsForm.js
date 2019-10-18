@@ -15,6 +15,9 @@ let commentsObj = [
 			"How can someone be soo good!!! You can tell he lives for this and loves to do it everyday. Every time I see him I get instantly happy! He's definitely my favorite ever"
 	}
 ];
+
+//code to get comments to go into the div created in HTML------------------------
+
 // const commentsOriginal = document.createElement("div");
 const comments = document.getElementById("comments__section");
 // collecting the comments section from the document
@@ -23,17 +26,22 @@ const newComments = document.getElementById("comments");
 const formValue = comments__section.getElementsByTagName('input["type = text"]')
 	.value; //getting the value from the <input> tag with type text
 
-// creating a for loop to loop through each object and create textNode of values
-
-const commentKeysTwo = Object.keys(commentsObj[1]);
-const commentKeys = Object.keys(commentsObj[0]);
 for (i = 0; i < commentsObj.length; i++) {
+	const newCommentsDiv = document.createElement("div");
+	const originalHeading = document.createElement("h3");
+	const originalParagraph = document.createElement("p");
+	// creating a for loop to loop through each object and create textNode of values
 	let text = document.createTextNode(commentsObj[i].name);
+	originalHeading.appendChild(text);
+	newCommentsDiv.appendChild(originalHeading);
 	let textOne = document.createTextNode(commentsObj[i].comment);
-	newComments.appendChild(text);
-	newComments.appendChild(textOne);
-	// newComments.appendChild(commentsOriginal);
+	originalParagraph.appendChild(textOne);
+	newCommentsDiv.appendChild(originalParagraph);
+	console.log(newCommentsDiv);
+	newComments.appendChild(newCommentsDiv);
 }
+
+//---------------------------------------------------------------------------------------
 
 comments.addEventListener("submit", (event) => {
 	// callback function so it can do the function once submit is submitted
@@ -66,5 +74,5 @@ comments.addEventListener("submit", (event) => {
 	commentsDivSmall.appendChild(createName);
 	commentsDivSmall.appendChild(inputText);
 	newComments.appendChild(commentsDivSmall);
+	console.log(Comments);
 });
-console.log(newComments);

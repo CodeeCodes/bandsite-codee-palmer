@@ -567,6 +567,10 @@ label {
   display: block;
 }
 
+#text {
+  display: block;
+}
+
 /*media query for mobile using max width so that it doesn't have a break at min-width*/
 /*media query for tablet*/
 /*media query for  landscape, large pixel density desktop*/
