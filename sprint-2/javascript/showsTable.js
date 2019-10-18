@@ -91,45 +91,5 @@ const table = document.querySelector("table");
 const showKeys = Object.keys(shows[0]);
 let count = 3;
 
-// function createTableTablet(table, shows) {
-// 	for (const show of shows) {
-// 		for (key in shows) {
-// 			let row = table.insertRow();
-// 			let cell = row.insertCell();
-// 			let text = document.createTextNode(show[key]);
-// 			cell.appendChild(text);
-// 			if (key === "date") {
-// 				let dateClass = document.querySelectorAll("td");
-// 				for (i = 0; i < dateClass.length; i++) {
-// 					if (i % 4 === 0) {
-// 						dateClass[i].classList.add("bolded-date");
-// 					}
-// 				}
-// 			}
-
-// 			//creating a button after each iteration
-// 			if (key === "location") {
-// 				let row = table.insertRow();
-// 				let btnCell = row.insertCell();
-// 				let btn = document.createElement("button");
-// 				btn.innerHTML = "CLICK ME";
-// 				btnCell.appendChild(btn);
-// 			}
-// 			count++;
-// 		}
-// 	}
-// }
-// function createTableHeadTablet(table, shows) {
-// 	let tHeadTablet = table.createTHead();
-// 	let row = tHeadTablet.insertRow();
-// 	let th = document.createElement("th");
-// 	let text = document.createTextNode(shows[0]);
-// 	th.appendChild(text);
-// 	row.appendChild(th);
-// }
-
-// const tableTablet = document.querySelector("shows__table-two");
-// createTableTablet(tableTablet, shows);
-
 // function invocation
 createTable(table, shows); // actually pass the students array

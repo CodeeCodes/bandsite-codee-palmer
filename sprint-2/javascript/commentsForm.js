@@ -1,4 +1,4 @@
-const comments = [
+const commentsObj = [
 	{
 		name: "Micheal Lyons",
 		comment:
@@ -15,38 +15,31 @@ const comments = [
 			"How can someone be soo good!!! You can tell he lives for this and loves to do it everyday. Every time I see him I get instantly happy! He's definitely my favorite ever"
 	}
 ];
+console.log(commentsObj);
 
-function validateData() {
-	let name = event.target.name.value;
-	let comments = event.target.comments.value;
-}
-// use DOM apis to get access to form element
-const form = document.getElementById("comments"); //form ID name is put into a const form
-form.addEventListener("submit", (comments) => {
-	//prevent page refresh
-	submitEvent.preventDefault();
-	//validate form
-	let isValidData = validateData(comments);
-	if (isValidData) {
-		let commentObj = {};
-		commentObj.name.submitEvent.name.value;
-		commentObj.comment.submitEvent.comment.value;
+const comments = document.getElementById("comments__section");
+const newComments = document.getElementById("comments");
+const formValue = comments__section.getElementsByTagName('input["type = text"]')
+	.value; //getting the value from the <input> tag with type text
 
-		comments.push(commentObj);
-		console.log(commentObj);
-		let table = document.querySelector("table");
-		// need only the keys for creating table head
-		let rsvpKeys = Object.keys(comments[0]);
+comments.addEventListener("submit", function(e) {
+	e.preventDefault();
 
-		createTableTablet(table, comment);
-		if (comments.length === 1) {
-			createTableHeadTablet(table, showKeys);
-		}
-	} else {
-		let alert = document.querySelector(".alert");
-		alert.style.display = "block";
-	}
+	//create element
+	// const commentAvatar = document.createElement("img")
 
-	// clear the form once submitted successfully
-	submitEvent.target.reset();
+	const inputText = document.createElement("p");
+	const createName = document.createElement("h3");
+	const commentsDivSmall = document.createElement("div");
+
+	// append to DOM
+
+	// createName.innerHTML = formValue; //using the createName variable .innerHTML to equal the value
+	// of formValue which is pulling data from the form
+	inputText.innerHTML = formValue;
+	commentsDivSmall.appendChild(createName);
+	commentsDivSmall.appendChild(inputText);
+	comments.appendChild(commentsDivSmall);
+
+	console.log(newComments);
 });

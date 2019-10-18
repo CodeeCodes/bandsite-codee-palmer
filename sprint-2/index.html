@@ -126,16 +126,20 @@
 			/>
 		</section>
 		<!-- beginning of comments-->
-	
-		<form id="comments">
-				<h1 class="comments__heading">join the Conversation</h1>
-			    <label
-          >Name:<input type="text" name="name" value="name" /></label
-        >
-		   <label
-		   >Comments<textarea rows="4" cols="50" name="comment"value="comments" form="comments">
-           Comments</textarea>
-        
+
+		<form id="comments__section">
+			<h1 class="comments__heading">join the Conversation</h1>
+			<label>Name:</label><input type="text" name="name" placeholder="Name" />
+			<label> </label>Comments<textarea
+				rows="3"
+				cols="40"
+				name="comment"
+				placeholder="comments"
+			>
+			</textarea>
+			<button type="submit" id="button__submit">SUBMIT</button>
+			<div id="comments"></div>
+		</form>
 		<!-- beginning of footer -->
 
 		<footer class="footer">
@@ -191,7 +195,7 @@
 				Copyright The Bees Knees © 2018 All Rights Reserved
 			</h5>
 		</footer>
-		<script src="./javaScript/showsTable.js"></script>
+
 		<script src="./javaScript/commentsForm.js"></script>
 	</body>
 </html>
