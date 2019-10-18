@@ -252,6 +252,83 @@ h5 {
   }
 }
 
+.shows__hero {
+  height: 472px;
+  width: 100vw;
+  position: relative;
+}
+
+.shows__hero-image {
+  height: 100%;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.shows__hero-heading {
+  color: #fff;
+  position: absolute;
+  top: 140px;
+  left: 5%;
+  margin: 0 5%;
+  margin-left: 0;
+}
+
+.shows__hero #soundcloud-iframe {
+  width: 90%;
+  height: 80px;
+  position: relative;
+  z-index: 1;
+  left: 5%;
+  bottom: 225px;
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 60px;
+    line-height: 68px;
+  }
+  h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  h3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  h4 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  h5 {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .shows__hero {
+    height: 400px;
+  }
+  .shows__hero-heading {
+    font-size: 60px;
+    line-height: 68px;
+    top: 140px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .shows__hero {
+    height: 670px;
+  }
+  .shows__hero-heading {
+    top: 260px;
+    margin-left: 7.55%;
+  }
+}
+
+.shows__heading-small {
+  position: absolute;
+  padding-top: 64px;
+  margin: 0;
+}
+
 .about {
   color: #323232;
   font-weight: bolder;
@@ -482,12 +559,17 @@ h5 {
   }
 }
 
+#comments {
+  display: block;
+  background-color: white;
+}
+
 /*media query for mobile using max width so that it doesn't have a break at min-width*/
 /*media query for tablet*/
 /*media query for  landscape, large pixel density desktop*/
 .shows__table,
 .shows__table-heading {
-  margin: 0 5%;
+  margin: 0 3.3%;
 }
 
 .shows__table tbody tr,
@@ -600,6 +682,15 @@ h5 {
   .shows__table {
     margin-left: 30%;
     margin-right: 12.5%;
+  }
+  .hidden-heading {
+    margin-right: 130px;
+  }
+  .table__heading-div {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 70%;
   }
 }
 

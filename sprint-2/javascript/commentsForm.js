@@ -22,8 +22,8 @@ const newComments = document.getElementById("comments");
 const formValue = comments__section.getElementsByTagName('input["type = text"]')
 	.value; //getting the value from the <input> tag with type text
 
-comments.addEventListener("submit", function(e) {
-	e.preventDefault();
+comments.addEventListener("submit", function(event) {
+	event.preventDefault();
 
 	//create element
 	// const commentAvatar = document.createElement("img")

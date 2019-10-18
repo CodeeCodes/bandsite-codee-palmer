@@ -1,7 +1,7 @@
 @import "./breakpoints";
 .shows__table,
 .shows__table-heading {
-	margin: 0 5%;
+	margin: 0 3.3%;
 
 	& tbody tr {
 		display: block;
@@ -94,5 +94,12 @@
 	.shows__table {
 		margin-left: 30%;
 		margin-right: 12.5%;
+	}
+	.hidden-heading {
+		margin-right: 130px;
+	}
+	.table__heading-div {
+		justify-content: flex-end;
+		width: 70%;
 	}
 }

@@ -1,0 +1,75 @@
+.shows__hero {
+	height: 472px;
+	width: 100vw;
+	position: relative;
+
+	&-image {
+		height: 100%;
+		width: 100vw;
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+
+	&-heading {
+		color: #fff;
+		position: absolute;
+		top: 140px;
+		left: 5%;
+		margin: 0 5%;
+		margin-left: 0;
+	}
+	#soundcloud-iframe {
+		width: 90%;
+		height: 80px;
+		position: relative;
+		z-index: 1;
+		left: 5%;
+		bottom: 225px;
+	}
+}
+
+@include medium {
+	h1 {
+		font-size: 60px;
+		line-height: 68px;
+	}
+	h2 {
+		font-size: 24px;
+		line-height: 32px;
+	}
+	h3 {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	h4 {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	h5 {
+		font-size: 12px;
+		line-height: 20px;
+	}
+
+	.shows__hero {
+		height: 400px;
+	}
+	.shows__hero-heading {
+		font-size: 60px;
+		line-height: 68px;
+		top: 140px;
+	}
+}
+
+@include large {
+	.shows__hero {
+		height: 670px;
+	}
+	.shows__hero-heading {
+		top: 260px;
+		margin-left: 7.55%;
+	}
+}
+.shows__heading-small {
+	position: absolute;
+	padding-top: 64px;
+	margin: 0;
+}

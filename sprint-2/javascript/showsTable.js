@@ -93,3 +93,6 @@ let count = 3;
 
 // function invocation
 createTable(table, shows); // actually pass the students array
+// let tr = document.querySelectorAll("tr");
+// tr.className = "table-row-spacing";
+// console.log(tr);
