@@ -567,8 +567,8 @@ label {
   display: block;
 }
 
-#text {
-  display: block;
+form p {
+  border-bottom: 1px solid black;
 }
 
 /*media query for mobile using max width so that it doesn't have a break at min-width*/
