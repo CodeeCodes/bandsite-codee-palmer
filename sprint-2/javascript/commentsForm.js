@@ -35,7 +35,7 @@ function createObject() {
 		let newCommentsDiv = document.createElement("div");
 		let originalHeading = document.createElement("h3");
 		let originalParagraph = document.createElement("p");
-		let originalDate = document.createElement("p");
+		let originalDate = document.createElement("div");
 		// creating a for loop to loop through each object and create textNode of values
 		let date = document.createTextNode(commentsObj[count].date);
 		originalDate.appendChild(date);
@@ -62,13 +62,14 @@ comments.addEventListener("submit", (event) => {
 
 	let name = event.target.name.value;
 	let comment = event.target.comment.value;
-	let date = Date.now;
+	let date = Date();
 
 	//pulling info from form
 	function addCommentToArray(name, comment) {
 		let x = new Object();
 		x.name = name;
 		x.comment = comment;
+		x.date = date;
 		commentsObj.push(x);
 		console.log(commentsObj);
 	}
