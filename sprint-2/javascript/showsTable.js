@@ -51,14 +51,6 @@ function createTable(table, shows) {
 					}
 				}
 			}
-			if (key === "date") {
-				let dateClassTwo = document.querySelectorAll("td");
-				for (i = 0; i < dateClassTwo.length; i++) {
-					if (i % 4 === 3) {
-						dateClassTwo[i].classList.add("underline-button");
-					}
-				}
-			}
 
 			if (key === "location") {
 				let buttonClassThree = document.querySelectorAll("th");
@@ -74,6 +66,7 @@ function createTable(table, shows) {
 				let btn = document.createElement("button");
 				btn.innerHTML = "CLICK ME";
 				btnCell.appendChild(btn);
+				btnCell.className = "underline-button";
 			}
 			count++;
 		}
@@ -93,6 +86,3 @@ let count = 3;
 
 // function invocation
 createTable(table, shows); // actually pass the students array
-// let tr = document.querySelectorAll("tr");
-// tr.className = "table-row-spacing";
-// console.log(tr);

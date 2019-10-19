@@ -5,7 +5,7 @@
 
 	&-image {
 		height: 100%;
-		width: 100vw;
+		width: 100%;
 		background-color: rgba(0, 0, 0, 0.8);
 	}
 
@@ -19,11 +19,19 @@
 	}
 	#soundcloud-iframe {
 		width: 90%;
-		height: 80px;
+		height: 125px;
 		position: relative;
 		z-index: 1;
 		left: 5%;
-		bottom: 225px;
+		bottom: 246px;
+		margin-top: 64px;
+	}
+
+	.shows__heading-small {
+		position: absolute;
+		padding-top: 64px;
+		margin-left: 5%;
+		color: #fff;
 	}
 }
 
@@ -67,9 +75,4 @@
 		top: 260px;
 		margin-left: 7.55%;
 	}
-}
-.shows__heading-small {
-	position: absolute;
-	padding-top: 64px;
-	margin: 0;
 }

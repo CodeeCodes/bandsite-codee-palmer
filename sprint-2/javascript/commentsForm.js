@@ -59,7 +59,7 @@ function createObject() {
 		count++;
 	}
 }
-// createObject();
+createObject();
 
 //---------------------------------------------------------------------------------------
 
@@ -84,7 +84,6 @@ comments.addEventListener("submit", (event) => {
 		commentsObj.unshift(x);
 		console.log(commentsObj);
 	}
-
 	addCommentToArray(name, comment); //adding what was inputted into text boxes in form
 	createObject();
 	comments.reset();
