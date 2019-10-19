@@ -21,48 +21,59 @@ let commentsObj = [
 
 //code to get comments to go into the div created in HTML------------------------
 
-// const commentsOriginal = document.createElement("div");
-const comments = document.getElementById("comments__section");
 // collecting the comments section from the document
+const comments = document.getElementById("comments__section");
+//getting the empty comments
 const newComments = document.getElementById("comments");
-// the empty div in the HTML
-const formValue = comments__section.getElementsByTagName('input["type = text"]')
-	.value; //getting the value from the <input> tag with type text
+//count for createObject function
 let count = 0;
 
 function createObject() {
+	//while count is less than length of comments object length
 	while (count < commentsObj.length) {
 		let newCommentsDiv = document.createElement("div");
+		newCommentsDiv.className = "new-comments-div";
 		let originalHeading = document.createElement("h3");
+		originalHeading.className = "new-comments-name";
 		let originalParagraph = document.createElement("p");
+		originalParagraph.className = "new-comments-paragraph";
 		let originalDate = document.createElement("div");
+		originalDate.className = "new-comments-date";
+
 		// creating a for loop to loop through each object and create textNode of values
+
+		//pulling information to make date textnode then appending it to child of newCommentsDiv
 		let date = document.createTextNode(commentsObj[count].date);
 		originalDate.appendChild(date);
 		newCommentsDiv.appendChild(date);
+		//pulling information to make Persons name textnode then appending it to child (h3) of newCommentsDiv
 		let text = document.createTextNode(commentsObj[count].name);
 		originalHeading.appendChild(text);
 		newCommentsDiv.appendChild(originalHeading);
+		//pulling information to make comment textnode then appending it to child <p> of newCommentsDiv
 		let textOne = document.createTextNode(commentsObj[count].comment);
 		originalParagraph.appendChild(textOne);
 		newCommentsDiv.appendChild(originalParagraph);
-
-		// console.log(newCommentsDiv);
+		// appending all elements to the empty div tag in html
 		newComments.appendChild(newCommentsDiv);
 		count++;
 	}
 }
-createObject();
+// createObject();
 
 //---------------------------------------------------------------------------------------
 
 comments.addEventListener("submit", (event) => {
 	// callback function so it can do the function once submit is submitted
+	//prevent default behaviour of the form element (page refresh)
 	event.preventDefault();
 
+	//pulling information from event <form>  and assigning them to variables
 	let name = event.target.name.value;
 	let comment = event.target.comment.value;
-	let date = Date();
+	let today = new Date();
+	let date =
+		today.getMonth() + 1 + "/" + today.getDate() + "/" + today.getFullYear();
 
 	//pulling info from form
 	function addCommentToArray(name, comment) {
@@ -70,34 +81,11 @@ comments.addEventListener("submit", (event) => {
 		x.name = name;
 		x.comment = comment;
 		x.date = date;
-		commentsObj.push(x);
+		commentsObj.unshift(x);
 		console.log(commentsObj);
 	}
-	addCommentToArray(name, comment);
+
+	addCommentToArray(name, comment); //adding what was inputted into text boxes in form
 	createObject();
-
-	//create element
-	// const commentAvatar = document.createElement("img")
-
-	// let inputText = document.createElement("p");
-	// let createName = document.createElement("h3");
-	// let commentsDivSmall = document.createElement("div");
-
-	// // append to DOM
-
-	// // createName.innerHTML = formValue; //using the createName variable .innerHTML to equal the value
-	// // of formValue which is pulling data from the form
-	// let commentsName = document.createTextNode(name);
-	// let commentsText = document.createTextNode(comment);
-
-	// // createName.innerText = commentsName;
-	// // inputText.innerText = commentsText;
-
-	// createName.appendChild(commentsName);
-	// inputText.appendChild(commentsText);
-
-	// commentsDivSmall.appendChild(createName);
-	// commentsDivSmall.appendChild(inputText);
-	// newComments.appendChild(commentsDivSmall);
-	// commentsObj.push.newComments;
+	comments.reset();
 });
