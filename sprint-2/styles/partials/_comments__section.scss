@@ -5,5 +5,30 @@ label {
 	display: block;
 }
 form p {
+	padding-bottom: 24px;
 	border-bottom: 1px solid black;
+}
+.new-comments-name {
+	display: inline-block;
+	margin-right: 5%;
+}
+
+@include medium {
+	form input,
+	textarea {
+		width: 70%;
+	}
+	.comments__section-text {
+		margin-left: 20%;
+	}
+	.new-comments-div {
+		width: 70%;
+		margin: 0 auto;
+	}
+}
+
+@include large {
+	.new-comments-div {
+		width: 36.66%;
+	}
 }

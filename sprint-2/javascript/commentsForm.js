@@ -42,14 +42,14 @@ function createObject() {
 
 		// creating a for loop to loop through each object and create textNode of values
 
-		//pulling information to make date textnode then appending it to child of newCommentsDiv
-		let date = document.createTextNode(commentsObj[count].date);
-		originalDate.appendChild(date);
-		newCommentsDiv.appendChild(date);
 		//pulling information to make Persons name textnode then appending it to child (h3) of newCommentsDiv
 		let text = document.createTextNode(commentsObj[count].name);
 		originalHeading.appendChild(text);
 		newCommentsDiv.appendChild(originalHeading);
+		//pulling information to make date textnode then appending it to child of newCommentsDiv
+		let date = document.createTextNode(commentsObj[count].date);
+		originalDate.appendChild(date);
+		newCommentsDiv.appendChild(date);
 		//pulling information to make comment textnode then appending it to child <p> of newCommentsDiv
 		let textOne = document.createTextNode(commentsObj[count].comment);
 		originalParagraph.appendChild(textOne);
@@ -81,7 +81,7 @@ comments.addEventListener("submit", (event) => {
 		x.name = name;
 		x.comment = comment;
 		x.date = date;
-		commentsObj.unshift(x);
+		commentsObj.push(x);
 		console.log(commentsObj);
 	}
 	addCommentToArray(name, comment); //adding what was inputted into text boxes in form

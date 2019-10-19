@@ -1,5 +1,5 @@
 .shows__table {
-	margin: 0 3.3%;
+	margin: 0 3.2%;
 	& tbody tr {
 		display: block;
 		text-align: left;
@@ -51,25 +51,52 @@
 }
 
 @include medium {
+	h1 {
+		font-size: 36px;
+		line-height: 44px;
+	}
+	h2 {
+		font-size: 24px;
+		line-height: 32px;
+	}
+	h3 {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	h4 {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	h5 {
+		font-size: 12px;
+		line-height: 20px;
+	}
 	.shows__table {
 		& tbody tr {
 			display: inline-block;
 			width: 25%;
 			border-bottom: 1px solid $dividerColour;
 			padding-top: 15px;
+			padding-bottom: 10px;
+		}
+
+		& tbody tr td {
+			margin-top: 0;
+			padding-top: 5px;
 		}
 		& button {
 			width: 160px;
 		}
-		.table-header {
-			display: none;
-		}
+
 		& tbody {
 			display: flex;
 			justify-content: space-between;
 			flex-direction: row;
 			flex-wrap: wrap;
 			width: 720px;
+		}
+		.table-header {
+			display: none;
 		}
 	}
 
@@ -82,12 +109,14 @@
 		font-family: "AvenirBold";
 	}
 	.hidden-heading {
-		margin-right: 52px;
+		margin-right: 80px;
 	}
 
 	.underline-button {
 		display: inline-block;
 		width: 160px;
+		padding: 0;
+		margin: 0;
 	}
 	.underline-button {
 		border-bottom: none;
@@ -107,5 +136,8 @@
 	.table__heading-div {
 		justify-content: flex-end;
 		width: 70%;
+	}
+	.shows__table-heading {
+		margin: 48px 12.5% 48px 12.5%;
 	}
 }

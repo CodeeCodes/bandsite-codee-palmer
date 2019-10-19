@@ -12,13 +12,14 @@
 	&-heading {
 		color: #fff;
 		position: absolute;
+		font-size: 36px;
 		top: 140px;
 		left: 5%;
 		margin: 0 5%;
 		margin-left: 0;
 	}
-	#soundcloud-iframe {
-		width: 90%;
+	.soundcloud-iframe {
+		// width: 90%;
 		height: 125px;
 		position: relative;
 		z-index: 1;
@@ -30,7 +31,7 @@
 	.shows__heading-small {
 		position: absolute;
 		padding-top: 64px;
-		margin-left: 5%;
+		// padding-left: 5%;
 		color: #fff;
 	}
 }
@@ -58,12 +59,19 @@
 	}
 
 	.shows__hero {
-		height: 400px;
+		height: 670px;
+	}
+
+	.soundcloud-iframe {
+		width: 50%;
 	}
 	.shows__hero-heading {
 		font-size: 60px;
 		line-height: 68px;
 		top: 140px;
+	}
+	.shows__heading-small {
+		padding-top: 96px;
 	}
 }
 
@@ -74,5 +82,15 @@
 	.shows__hero-heading {
 		top: 260px;
 		margin-left: 7.55%;
+		margin-right: 50.5%;
+	}
+	.soundcloud-iframe {
+		width: 30.27%;
+		margin-right: 12.5%;
+		left: 57.5%;
+		bottom: 450px;
+	}
+	.shows__heading-small {
+		padding-left: 12.5%;
 	}
 }
