@@ -1,33 +1,89 @@
 #comments__section {
 	margin: 0 4%;
 }
+.comments__heading {
+	margin: 64px 0 40px 0;
+}
+.comments__section-text {
+	margin-left: 20%;
+}
+
 label {
 	display: block;
+	opacity: 0.3;
+	margin: 5px 0;
+	width: 81.55%;
 }
-form p {
-	padding-bottom: 24px;
-	border-bottom: 1px solid black;
+input,
+textarea {
+	border-radius: 4px;
+	width: 95%;
+}
+#button__submit {
+	margin-left: 20%;
+	width: 76.1%;
+	background-color: $primeCta;
+	color: #fff;
+	border-radius: 4px;
+}
+.new-comments-avatar {
+	width: 40px;
+	height: 40px;
+	border-radius: 30px;
+	margin-top: 24px;
+	float: left;
 }
 .new-comments-name {
 	display: inline-block;
-	margin-right: 5%;
+	margin-top: 40px;
+}
+.new-comments-date {
+	display: inline-block;
+	opacity: 0.3;
+	margin-top: 40px;
+	float: right;
+}
+.new-comments-paragraph {
+	margin-bottom: 0;
+	margin-left: 35px;
+	width: 85%;
+	padding-bottom: 24px;
+	border-bottom: 1px solid $dividerColour;
+}
+
+.new-comments-date:after {
+	content: "";
+	  display: block;
+	 clear: both;
 }
 
 @include medium {
 	form input,
 	textarea {
-		width: 70%;
+		width: 75%;
 	}
 	.comments__section-text {
-		margin-left: 20%;
+		margin-left: 25%;
 	}
 	.new-comments-div {
-		width: 70%;
+		width: 75%;
 		margin: 0 auto;
+	}
+	#button__submit {
+		margin-left: 63.35%;
+		width: 18%;
+		height: 35px;
+	}
+	.new-comments-date {
+		margin-right: 9%;
 	}
 }
 
 @include large {
+	form input,
+	textarea {
+		width: 46.9%;
+	}
 	.new-comments-div {
 		width: 36.66%;
 	}
