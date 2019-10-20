@@ -259,6 +259,7 @@ h5 {
 }
 
 .shows__hero .soundcloud-iframe {
+  width: 90%;
   height: 125px;
   position: relative;
   z-index: 1;
@@ -270,6 +271,7 @@ h5 {
 .shows__hero .shows__heading-small {
   position: absolute;
   padding-top: 64px;
+  padding-left: 5%;
   color: #fff;
 }
 

@@ -76,7 +76,6 @@ comments.addEventListener("submit", (event) => {
 	event.preventDefault();
 
 	//pulling information from event <form>  and assigning them to variables
-	let avatar = event.target.avatar.value;
 	let name = event.target.name.value;
 	let comment = event.target.comment.value;
 	let today = new Date();
@@ -86,7 +85,6 @@ comments.addEventListener("submit", (event) => {
 	//pulling info from form
 	function addCommentToArray(name, comment) {
 		let x = new Object();
-		x.avatar = avatar;
 		x.name = name;
 		x.comment = comment;
 		x.date = date;
