@@ -9,7 +9,12 @@
 	</head>
 	<body>
 		<nav class="header">
-			<img class="header__logo" src="../assets/Logo/Logo-bandsite.svg" alt="" />
+			<a href="../index.html" class="bandsite-home"
+				><img
+					class="header__logo"
+					src="../assets/Logo/Logo-bandsite.svg"
+					alt="bandsite logo"
+			/></a>
 			<ul class="header__menu">
 				<li class="header__menu-item">
 					<a class="header__menu-link" href="../index.html">Biography</a>
@@ -24,33 +29,38 @@
 		<!-----------------------start of hero --------------------->
 
 		<section class="shows__hero">
-				<h4 class="shows__heading-small">Woman Worldwide Album</h4>
+			<h4 class="shows__heading-small" id="shows-heading-smalls">
+				Woman Worldwide Album
+			</h4>
 			<img
 				class="shows__hero-image"
 				src="../assets/Images/hero2.jpg"
 				alt="Music image"
 			/>
-		
+
 			<h1 class="shows__hero-heading">
-			Waters of Nazareth x We Are your Friends x Phantom
+				Waters of Nazareth x We Are your Friends x Phantom
 			</h1>
-			<iframe class="soundcloud-iframe" 
-			width="100%" 
-			height="300" 
-			scrolling="no" 
-			frameborder="no" 
-			allow="autoplay" 
-			src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/255881202&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+			<iframe
+				id="soundcloud-iframe"
+				class="soundcloud-iframes"
+				width="100%"
+				height="300"
+				scrolling="no"
+				frameborder="no"
+				allow="autoplay"
+				src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/255881202&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+			></iframe>
 			<!--this embedded music is from Soundcloud-->
 		</section>
 
 		<!--------------------start of table--------------------------------->
-		
+
 		<h1 class="shows__table-heading">Shows</h1>
 		<div class="table__heading-div">
-		<h4 class="hidden-heading">DATES</h3>
-		<h4 class="hidden-heading">VENUES</h3>
-		<h4 class="hidden-heading">LOCATIONS</h4>
+			<h4 class="hidden-heading">DATES</h4>
+			<h4 class="hidden-heading">VENUES</h4>
+			<h4 class="hidden-heading">LOCATIONS</h4>
 		</div>
 
 		<table class="shows__table"></table>

@@ -15,6 +15,7 @@
 		list-style-type: none;
 		padding-left: 0;
 		margin-bottom: 0;
+		margin-top: 10px;
 	}
 
 	&__menu-item {
@@ -31,6 +32,9 @@
 #item-active {
 	border-bottom: 2px solid #fff;
 	padding-bottom: 6px;
+}
+.bandsite-home {
+	text-align: center;
 }
 @include medium {
 	h1 {

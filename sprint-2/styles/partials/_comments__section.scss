@@ -31,7 +31,11 @@ textarea {
 	height: 40px;
 	border-radius: 30px;
 	margin-top: 24px;
-	float: left;
+}
+#hard-avatar {
+	position: relative;
+	top: 60px;
+	right: 55px;
 }
 .new-comments-name {
 	display: inline-block;
@@ -77,6 +81,9 @@ textarea {
 	.new-comments-date {
 		margin-right: 9%;
 	}
+	#hard-avatar {
+		right: 83px;
+	}
 }
 
 @include large {
@@ -106,5 +113,8 @@ textarea {
 		margin-left: 47.7%;
 		width: 12.1%;
 		height: 35px;
+	}
+	#hard-avatar {
+		right: 43px;
 	}
 }
