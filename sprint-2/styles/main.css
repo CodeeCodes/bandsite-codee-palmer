@@ -660,6 +660,26 @@ textarea {
 }
 
 @media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 60px;
+    line-height: 68px;
+  }
+  h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  h3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  h4 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  h5 {
+    font-size: 12px;
+    line-height: 20px;
+  }
   form input,
   textarea {
     width: 75%;
@@ -700,6 +720,9 @@ textarea {
   }
   .new-comments-paragraph {
     margin-left: 50px;
+  }
+  .new-comments-avatar {
+    margin-right: 5px;
   }
 }
 
