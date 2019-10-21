@@ -28,14 +28,14 @@
 		bottom: 246px;
 		margin-top: 64px;
 	}
+	#heading-smalls {
+		position: absolute;
+		padding-top: 64px;
+		padding-left: 5%;
+		color: #fff;
+	}
 }
 
-#shows-heading-smalls {
-	position: absolute;
-	padding-top: 64px;
-	padding-left: 5%;
-	color: #fff;
-}
 @include medium {
 	h1 {
 		font-size: 60px;
@@ -67,14 +67,14 @@
 		line-height: 68px;
 		top: 140px;
 	}
-	.shows__heading-small {
-		padding-top: 96px;
-		padding-left: 12.5%;
-	}
 
 	#soundcloud-iframe {
 		width: 50%;
 	}
+}
+.shows__heading-small {
+	padding-top: 96px;
+	padding-left: 12.5%;
 }
 
 @include large {
@@ -87,10 +87,6 @@
 		margin-right: 50.5%;
 	}
 
-	.shows__heading-small {
-		padding-left: 12.5%;
-	}
-
 	#soundcloud-iframe {
 		width: 30.27%;
 		margin-right: 12.5%;
@@ -98,4 +94,7 @@
 		left: 48.5%;
 		bottom: 410px;
 	}
+}
+.shows__heading-small {
+	padding-left: 12.5%;
 }
