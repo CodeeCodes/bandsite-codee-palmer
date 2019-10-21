@@ -13,7 +13,7 @@
         "partials/_gallery.scss",
         "partials/_comments__section.scss",
         "partials/_footer.scss",
-        "partials/shows.scss"
+        "partials/_shows.scss"
     ],
     "names": [],
     "file": "main.css"
