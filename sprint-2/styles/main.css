@@ -169,6 +169,9 @@ h5 {
     margin-top: 29px;
     padding-top: 0;
   }
+  .bandsite-home {
+    margin-left: 3.125%;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -177,6 +180,9 @@ h5 {
   }
   .header__menu-item {
     margin: 0 0 0 56px;
+  }
+  .bandsite-home {
+    margin-left: 12.5%;
   }
 }
 
@@ -597,7 +603,7 @@ textarea {
 }
 
 .comments__heading {
-  margin: 64px 0 40px 0;
+  margin: 64px 0 0 6%;
 }
 
 .comments__section-text {
@@ -979,6 +985,9 @@ textarea {
     font-size: 12px;
     line-height: 20px;
   }
+  .shows__table {
+    margin: 0 5%;
+  }
   .shows__table tbody tr {
     display: inline-block;
     width: 25%;
@@ -1025,8 +1034,11 @@ textarea {
     opacity: 0.3;
     font-family: "AvenirBold";
   }
+  .shows__table-heading {
+    margin-left: 4%;
+  }
   .hidden-heading {
-    margin-right: 80px;
+    margin-right: 50px;
   }
   .underline-button {
     display: inline-block;

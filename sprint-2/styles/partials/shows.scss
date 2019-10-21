@@ -72,6 +72,7 @@
 		line-height: 20px;
 	}
 	.shows__table {
+		margin: 0 5%;
 		& tbody tr {
 			display: inline-block;
 			width: 25%;
@@ -108,8 +109,11 @@
 		opacity: 0.3;
 		font-family: "AvenirBold";
 	}
+	.shows__table-heading {
+		margin-left: 4%;
+	}
 	.hidden-heading {
-		margin-right: 80px;
+		margin-right: 50px;
 	}
 
 	.underline-button {
