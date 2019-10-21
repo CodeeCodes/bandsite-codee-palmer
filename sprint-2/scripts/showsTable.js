@@ -1,36 +1,45 @@
-const shows = [
-	{
-		date: "Mon Dec 17 2018",
-		venue: "Ronald Lane",
-		location: "San Francisco, CA"
-	},
-	{
-		date: "Tue Jul 18 2019",
-		venue: "Pier 3 East",
-		location: "San Francisco, CA"
-	},
-	{
-		date: "Fri Jul 22 2019",
-		venue: "View Lounge",
-		location: "San Francisco, CA"
-	},
-	{
-		date: "Sat Aug 12 2019",
-		venue: "Hyatt Agency",
-		location: "San Francisco, CA"
-	},
+// const shows = [
+// 	{
+// 		date: "Mon Dec 17 2018",
+// 		venue: "Ronald Lane",
+// 		location: "San Francisco, CA"
+// 	},
+// 	{
+// 		date: "Tue Jul 18 2019",
+// 		venue: "Pier 3 East",
+// 		location: "San Francisco, CA"
+// 	},
+// 	{
+// 		date: "Fri Jul 22 2019",
+// 		venue: "View Lounge",
+// 		location: "San Francisco, CA"
+// 	},
+// 	{
+// 		date: "Sat Aug 12 2019",
+// 		venue: "Hyatt Agency",
+// 		location: "San Francisco, CA"
+// 	},
 
-	{
-		date: "Fri Sep 05 2019",
-		venue: "Moscow Center",
-		location: "San Francisco, CA"
-	},
-	{
-		date: "Wed Aug 11 2019",
-		venue: "Pres Club",
-		location: "San Francisco, CA"
-	}
-];
+// 	{
+// 		date: "Fri Sep 05 2019",
+// 		venue: "Moscow Center",
+// 		location: "San Francisco, CA"
+// 	},
+// 	{
+// 		date: "Wed Aug 11 2019",
+// 		venue: "Pres Club",
+// 		location: "San Francisco, CA"
+// 	}
+// ];
+
+axios
+	.get(
+		"https://project-1-api.herokuapp.com/showdates?api_key=49124594-6b32-4c22-8ce7-d4004cd062f5"
+	)
+	.then((response) => {
+		createTable(table, response.data);
+	});
+console.log(response.data);
 
 function createTable(table, shows) {
 	for (const show of shows) {
@@ -43,6 +52,7 @@ function createTable(table, shows) {
 			let cell = row.insertCell();
 			let text = document.createTextNode(show[key]);
 			cell.appendChild(text);
+
 			if (key === "date") {
 				let dateClass = document.querySelectorAll("td");
 				for (i = 0; i < dateClass.length; i++) {
