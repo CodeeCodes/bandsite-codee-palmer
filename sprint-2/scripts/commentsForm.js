@@ -32,6 +32,7 @@ axios
 	)
 	.then((response) => {
 		createObject(response.data);
+		console.log(response.data);
 	});
 
 //code to get comments to go into the div created in HTML------------------------
@@ -66,7 +67,8 @@ function createObject(commentsObj) {
 		originalHeading.appendChild(text);
 		newCommentsDiv.appendChild(originalHeading);
 		//pulling information to make date textnode then appending it to child of newCommentsDiv
-		let date = document.createTextNode(commentsObj[count].date);
+		let date = document.createTextNode(commentsObj[count].timestamp);
+		console.log(date);
 		originalDate.appendChild(date);
 		newCommentsDiv.appendChild(originalDate);
 		//pulling information to make comment textnode then appending it to child <p> of newCommentsDiv

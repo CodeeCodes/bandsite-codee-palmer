@@ -101,14 +101,6 @@
 		}
 	}
 
-	.table__heading-div {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-		width: 75%;
-		opacity: 0.3;
-		font-family: "AvenirBold";
-	}
 	.shows__table-heading {
 		margin-left: 4%;
 	}
@@ -137,10 +129,7 @@
 	.hidden-heading {
 		margin-right: 130px;
 	}
-	.table__heading-div {
-		justify-content: flex-end;
-		width: 70%;
-	}
+
 	.shows__table-heading {
 		margin: 48px 12.5% 48px 12.5%;
 	}
