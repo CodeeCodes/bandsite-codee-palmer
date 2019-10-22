@@ -1101,7 +1101,6 @@ textarea {
 }
 
 .new__show-div {
-  border-top: 1px solid #d5d2d1;
   border-bottom: 1px solid #d5d2d1;
   padding-bottom: 10px;
 }
@@ -1159,11 +1158,31 @@ textarea {
   .new__show-button {
     width: 160px;
   }
+  .table__heading-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 75%;
+    opacity: 0.3;
+    font-family: "AvenirBold";
+  }
 }
 
 @media only screen and (min-width: 1440px) {
   .shows-section {
     margin: 0 25%;
+  }
+  .table__heading-div {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 65%;
   }
 }
 /*# sourceMappingURL=main.css.map */

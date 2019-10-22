@@ -1,8 +1,8 @@
 .shows-section {
 	margin: 0 5%;
 }
+
 .new__show-div {
-	border-top: 1px solid $dividerColour;
 	border-bottom: 1px solid $dividerColour;
 	padding-bottom: 10px;
 }
@@ -55,10 +55,22 @@
 	.new__show-button {
 		width: 160px;
 	}
+	.table__heading-div {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		width: 75%;
+		opacity: 0.3;
+		font-family: "AvenirBold";
+	}
 }
 
 @include large {
 	.shows-section {
 		margin: 0 25%;
+	}
+	.table__heading-div {
+		justify-content: flex-end;
+		width: 65%;
 	}
 }
