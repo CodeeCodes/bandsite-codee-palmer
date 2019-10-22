@@ -1095,4 +1095,75 @@ textarea {
     margin: 48px 12.5% 48px 12.5%;
   }
 }
+
+.shows-section {
+  margin: 0 5%;
+}
+
+.new__show-div {
+  border-top: 1px solid #d5d2d1;
+  border-bottom: 1px solid #d5d2d1;
+  padding-bottom: 10px;
+}
+
+.new__show-button {
+  width: 90vw;
+  height: 48px;
+  margin-top: 10px;
+  background-color: #323232;
+  border-radius: 4px;
+  text-align: center;
+  color: #fff;
+}
+
+.new__show-location,
+.new__show-Venue {
+  opacity: 0.3;
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  h3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  h4 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  h5 {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .shows-section {
+    margin: 0 5%;
+  }
+  .new__show-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .new__show-heading {
+    display: none;
+  }
+  .new__show-button {
+    width: 160px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .shows-section {
+    margin: 0 25%;
+  }
+}
 /*# sourceMappingURL=main.css.map */

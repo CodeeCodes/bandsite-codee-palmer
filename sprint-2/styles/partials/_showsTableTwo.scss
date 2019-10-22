@@ -1,0 +1,64 @@
+.shows-section {
+	margin: 0 5%;
+}
+.new__show-div {
+	border-top: 1px solid $dividerColour;
+	border-bottom: 1px solid $dividerColour;
+	padding-bottom: 10px;
+}
+.new__show-button {
+	width: 90vw;
+	height: 48px;
+	margin-top: 10px;
+	background-color: $primeCta;
+	border-radius: 4px;
+	text-align: center;
+	color: #fff;
+}
+
+.new__show-location,
+.new__show-Venue {
+	opacity: 0.3;
+}
+
+@include medium {
+	h1 {
+		font-size: 36px;
+		line-height: 44px;
+	}
+	h2 {
+		font-size: 24px;
+		line-height: 32px;
+	}
+	h3 {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	h4 {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	h5 {
+		font-size: 12px;
+		line-height: 20px;
+	}
+	.shows-section {
+		margin: 0 5%;
+	}
+	.new__show-div {
+		display: flex;
+		justify-content: space-between;
+	}
+	.new__show-heading {
+		display: none;
+	}
+	.new__show-button {
+		width: 160px;
+	}
+}
+
+@include large {
+	.shows-section {
+		margin: 0 25%;
+	}
+}

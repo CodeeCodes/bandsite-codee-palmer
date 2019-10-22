@@ -47,7 +47,7 @@ function createObject(commentsObj) {
 	//while count is less than length of comments object length
 	while (count < commentsObj.length) {
 		let newCommentsAvatar = document.createElement("img");
-		newCommentsAvatar.src = "assets/Images/avatar.jpg";
+		newCommentsAvatar.src = "sprint-2/assets/Images/avatar.jpg";
 		newCommentsAvatar.className = "new-comments-avatar";
 		let newCommentsDiv = document.createElement("div");
 		newCommentsDiv.className = "new-comments-div";
