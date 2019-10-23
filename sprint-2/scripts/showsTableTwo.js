@@ -1,11 +1,10 @@
-axios
-	.get(
-		"https://project-1-api.herokuapp.com/showdates?api_key=49124594-6b32-4c22-8ce7-d4004cd062f5"
-	)
-	.then((response) => {
-		console.log(response.data);
-		createTableDivs(response.data);
-	});
+const URL =
+	"https://project-1-api.herokuapp.com/showdates?api_key=49124594-6b32-4c22-8ce7-d4004cd062f5";
+
+axios.get(URL).then((response) => {
+	// console.log(response.data);
+	createTableDivs(response.data);
+});
 let count = 0;
 const newShows = document.querySelector(".shows-section");
 
