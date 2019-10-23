@@ -22,6 +22,8 @@ const newComments = document.getElementById("comments");
 function createObject(commentsObj) {
 	//while count is less than length of comments object length
 	for (let i = 0; i < commentsObj.length; i++) {
+		const deletedDiv = document.createElement("div");
+		deletedDiv.className = "deleted-div";
 		let newCommentsAvatar = document.createElement("img");
 		newCommentsAvatar.src = "sprint-2/assets/Images/avatar.jpg";
 		newCommentsAvatar.className = "new-comments-avatar";
@@ -54,7 +56,8 @@ function createObject(commentsObj) {
 		originalParagraph.appendChild(textOne);
 		newCommentsDiv.appendChild(originalParagraph);
 		// appending all elements to the empty div tag in html
-		newComments.appendChild(newCommentsDiv);
+		deletedDiv.appendChild(newCommentsDiv);
+		comments.appendChild(deletedDiv);
 	}
 }
 retrieveComments();
@@ -65,12 +68,9 @@ comments.addEventListener("submit", (event) => {
 	//prevent default behaviour of the form element (page refresh)
 	event.preventDefault();
 	let removeVar = function removeDiv() {
-		for (let i = 0; i < count; i++) {
-			let divRemove = document.getElementById("comments");
-			divRemove.removeChild(divRemove.childNodes[0]);
-		}
+		let divRemove = document.getElementById("comments");
+		divRemove.removeChild(divRemove.childNodes[0]);
 	};
-
 	//pulling information from event <form>  and assigning them to variables
 	let name = event.target.name.value;
 	let comment = event.target.comment.value;
@@ -94,7 +94,7 @@ comments.addEventListener("submit", (event) => {
 		});
 	setTimeout(function() {
 		retrieveComments();
-	}, 3000);
+	}, 300);
 
 	removeVar();
 	// retrieveComments();
