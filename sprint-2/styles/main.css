@@ -987,6 +987,10 @@ textarea {
   display: none;
 }
 
+.hidden-key {
+  opacity: 0.5;
+}
+
 @media only screen and (min-width: 768px) {
   h1 {
     font-size: 36px;
@@ -1057,6 +1061,9 @@ textarea {
   }
   .underline-button {
     border-bottom: none;
+  }
+  .hidden-key {
+    display: none;
   }
 }
 

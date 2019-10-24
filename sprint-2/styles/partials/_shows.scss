@@ -49,6 +49,9 @@
 .table__heading-div {
 	display: none;
 }
+.hidden-key {
+	opacity: 0.5;
+}
 
 @include medium {
 	h1 {
@@ -116,6 +119,9 @@
 	}
 	.underline-button {
 		border-bottom: none;
+	}
+	.hidden-key {
+		display: none;
 	}
 }
 @include large {

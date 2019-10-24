@@ -3,7 +3,7 @@ let count = 3;
 
 //Axios
 const URL =
-	"https://project-1-api.herokuapp.com/comments?api_key=1d62d694-bcac-4726-b895-087be90906f6";
+	"https://project-1-api.herokuapp.com/comments?api_key=9b563700-b00e-4ac5-8c45-fdc0ad8c26fc";
 function retrieveComments() {
 	axios.get(URL).then((response) => {
 		// console.log(response);
@@ -20,10 +20,12 @@ const newComments = document.getElementById("comments");
 //count for createObject function
 
 function createObject(commentsObj) {
+	const deletedDiv = document.createElement("div");
+	deletedDiv.setAttribute("id", "deleted-div");
+	newComments.appendChild(deletedDiv);
 	//while count is less than length of comments object length
-	for (let i = 0; i < commentsObj.length; i++) {
-		const deletedDiv = document.createElement("div");
-		deletedDiv.className = "deleted-div";
+	for (let i = commentsObj.length - 1; i >= 0; i--) {
+		// deletedDiv.appendChild(newComments);
 		let newCommentsAvatar = document.createElement("img");
 		newCommentsAvatar.src = "sprint-2/assets/Images/avatar.jpg";
 		newCommentsAvatar.className = "new-comments-avatar";
@@ -57,20 +59,16 @@ function createObject(commentsObj) {
 		newCommentsDiv.appendChild(originalParagraph);
 		// appending all elements to the empty div tag in html
 		deletedDiv.appendChild(newCommentsDiv);
-		comments.appendChild(deletedDiv);
 	}
 }
-retrieveComments();
+
 //---------------------------------------------------------------------------------------
 
 comments.addEventListener("submit", (event) => {
 	// callback function so it can do the function once submit is submitted
 	//prevent default behaviour of the form element (page refresh)
 	event.preventDefault();
-	let removeVar = function removeDiv() {
-		let divRemove = document.getElementById("comments");
-		divRemove.removeChild(divRemove.childNodes[0]);
-	};
+
 	//pulling information from event <form>  and assigning them to variables
 	let name = event.target.name.value;
 	let comment = event.target.comment.value;
@@ -83,20 +81,28 @@ comments.addEventListener("submit", (event) => {
 
 	axios
 		.post(
-			"https://project-1-api.herokuapp.com/comments?api_key=1d62d694-bcac-4726-b895-087be90906f6",
+			"https://project-1-api.herokuapp.com/comments?api_key=9b563700-b00e-4ac5-8c45-fdc0ad8c26fc",
 			axiosObject
 		)
 		.then(function(response) {
-			// console.log(response);
+			removeDiv();
+			console.log(response);
 		})
 		.catch(function(error) {
-			// console.log(error);
+			console.log(error);
 		});
 	setTimeout(function() {
 		retrieveComments();
-	}, 300);
+	}, 250);
 
-	removeVar();
 	// retrieveComments();
 	comments.reset();
 });
+// function removeDiv() {
+// 	newComments.removeChild(newComments.childNodes[0]);
+// }
+function removeDiv() {
+	let del = document.getElementById("comments");
+	del.removeChild(del.childNodes[0]);
+}
+retrieveComments();

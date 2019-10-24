@@ -6,6 +6,7 @@ axios.get(URL).then((response) => {
 	createTableDivs(response.data);
 });
 let count = 0;
+
 const newShows = document.querySelector(".shows-section");
 
 function createTableDivs(tableDivs) {
@@ -24,23 +25,32 @@ function createTableDivs(tableDivs) {
 		let newShowButton = document.createElement("button");
 		newShowButton.innerHTML = "BUY TICKETS";
 		newShowButton.className = "new__show-button";
+		let dateKey = document.createElement("h5");
+		dateKey.innerHTML = "DATE";
+		dateKey.className = "hidden-key";
+		let venueKey = document.createElement("h5");
+		venueKey.innerHTML = "VENUE";
+		venueKey.className = "hidden-key";
+		let locationKey = document.createElement("h5");
+		locationKey.innerHTML = "LOCATION";
+		locationKey.className = "hidden-key";
 
 		// creating a for loop to loop through each object and create textNode of values
 		//create a avatar
 		newShowDiv.appendChild(newHeading);
 		//pulling information to make Persons name textnode then appending it to child (h3) of newCommentsDiv
-		let heading = document.createTextNode(tableDivs[count].keys);
-		newHeading.appendChild(heading);
-		newShowDiv.appendChild(newHeading);
+		newShowDiv.appendChild(dateKey);
 		//pulling information to make date textnode then appending it to child of newCommentsDiv
 		let date = document.createTextNode(tableDivs[count].date);
 		newShowDate.appendChild(date);
 		newShowDiv.appendChild(newShowDate);
 		//pulling information to make comment textnode then appending it to child <p> of newCommentsDiv
+		newShowDiv.appendChild(venueKey);
 		let venue = document.createTextNode(tableDivs[count].place);
 		newShowVenue.appendChild(venue);
 		newShowDiv.appendChild(newShowVenue);
 		//
+		newShowDiv.appendChild(locationKey);
 		let location = document.createTextNode(tableDivs[count].location);
 		newShowLocation.appendChild(location);
 		newShowDiv.appendChild(newShowLocation);
