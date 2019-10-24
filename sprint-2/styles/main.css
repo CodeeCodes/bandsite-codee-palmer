@@ -20,18 +20,6 @@
   font-style: normal;
 }
 
-@font-face {
-  src: url(../../assets/fonts/avenir/Linotype\-\AvenirNextLTPro-Light.otf);
-  font-family: "AvenirLight";
-  font-style: normal;
-}
-
-@font-face {
-  src: url(../../assets/fonts/avenir/Linotype\-\AvenirNextLTPro-Thin.otf);
-  font-family: "AvenirThin";
-  font-style: normal;
-}
-
 /*media query for mobile using max width so that it doesn't have a break at min-width*/
 /*media query for tablet*/
 /*media query for  landscape, large pixel density desktop*/

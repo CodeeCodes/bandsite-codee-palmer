@@ -1,14 +1,16 @@
 let count = 3;
-//Api's
 
 //Axios
-const URL =
-	"https://project-1-api.herokuapp.com/comments?api_key=9b563700-b00e-4ac5-8c45-fdc0ad8c26fc";
+
 function retrieveComments() {
-	axios.get(URL).then((response) => {
-		// console.log(response);
-		createObject(response.data);
-	});
+	axios
+		.get(
+			"https://project-1-api.herokuapp.com/comments?api_key=2d176dfe-feb0-4ae7-b751-81e63ff6d860"
+		)
+		.then((response) => {
+			// console.log(response);
+			createObject(response.data);
+		});
 }
 
 //code to get comments to go into the div created in HTML------------------------
@@ -81,7 +83,7 @@ comments.addEventListener("submit", (event) => {
 
 	axios
 		.post(
-			"https://project-1-api.herokuapp.com/comments?api_key=9b563700-b00e-4ac5-8c45-fdc0ad8c26fc",
+			"https://project-1-api.herokuapp.com/comments?api_key=2d176dfe-feb0-4ae7-b751-81e63ff6d860",
 			axiosObject
 		)
 		.then(function(response) {
