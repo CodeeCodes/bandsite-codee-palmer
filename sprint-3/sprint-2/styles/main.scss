@@ -1,0 +1,48 @@
+@charset 'utf-8';
+
+@import "./partials/colours";
+@import "./partials/fonts";
+@import "./partials/breakpoints";
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Avenir";
+	width: 100vw;
+	height: 100vh;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+h1 {
+	font-size: 24px;
+	line-height: 32px;
+}
+h2 {
+	font-size: 14px;
+	line-height: 22px;
+}
+h4 {
+	font-size: 13px;
+	line-height: 18px;
+}
+h5 {
+	font-size: 12px;
+	line-height: 20px;
+}
+@import "./partials/_header";
+@import "./partials/_hero";
+@import "./partials/_shows-hero";
+@import "./partials/_about";
+@import "./partials/_gallery";
+@import "./partials/_comments__section";
+@import "./partials/_footer";
+@import "./partials/shows";
+@import "./partials/showsTableTwo";
