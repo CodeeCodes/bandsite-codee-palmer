@@ -3,7 +3,7 @@ let count = 3;
 
 //Axios
 const URL =
-	"https://project-1-api.herokuapp.com/comments?api_key=9b563700-b00e-4ac5-8c45-fdc0ad8c26fc";
+	"https://project-1-api.herokuapp.com/comments?api_key=bcc2ee8e-b2bd-4393-8efd-0d497c2ba85b";
 function retrieveComments() {
 	axios.get(URL).then((response) => {
 		// console.log(response);
@@ -81,7 +81,7 @@ comments.addEventListener("submit", (event) => {
 
 	axios
 		.post(
-			"https://project-1-api.herokuapp.com/comments?api_key=9b563700-b00e-4ac5-8c45-fdc0ad8c26fc",
+			"https://project-1-api.herokuapp.com/comments?api_key=bcc2ee8e-b2bd-4393-8efd-0d497c2ba85b",
 			axiosObject
 		)
 		.then(function(response) {
