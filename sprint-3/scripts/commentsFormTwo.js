@@ -5,7 +5,7 @@ let count = 3;
 function retrieveComments() {
 	axios
 		.get(
-			"https://project-1-api.herokuapp.com/comments?api_key=2d176dfe-feb0-4ae7-b751-81e63ff6d860"
+			"https://project-1-api.herokuapp.com/comments?api_key=3a2efde3-55a8-4d11-8445-f9f2d74b6929"
 		)
 		.then((response) => {
 			// console.log(response);
@@ -49,6 +49,7 @@ function createObject(commentsObj) {
 		newCommentsDiv.appendChild(originalHeading);
 		//pulling information to make date textnode then appending it to child of newCommentsDiv
 		let date = commentsObj[i].timestamp;
+		console.log(date);
 		let today = new Date();
 		date =
 			today.getMonth() + 1 + "/" + today.getDate() + "/" + today.getFullYear();
@@ -83,7 +84,7 @@ comments.addEventListener("submit", (event) => {
 
 	axios
 		.post(
-			"https://project-1-api.herokuapp.com/comments?api_key=2d176dfe-feb0-4ae7-b751-81e63ff6d860",
+			"https://project-1-api.herokuapp.com/comments?api_key=3a2efde3-55a8-4d11-8445-f9f2d74b6929",
 			axiosObject
 		)
 		.then(function(response) {
