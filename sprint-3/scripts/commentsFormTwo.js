@@ -49,7 +49,6 @@ function createObject(commentsObj) {
 		newCommentsDiv.appendChild(originalHeading);
 		//pulling information to make date textnode then appending it to child of newCommentsDiv
 		let date = commentsObj[i].timestamp;
-		console.log(date);
 		let today = new Date();
 		date =
 			today.getMonth() + 1 + "/" + today.getDate() + "/" + today.getFullYear();

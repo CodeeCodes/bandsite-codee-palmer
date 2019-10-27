@@ -1,10 +1,7 @@
 @charset "UTF-8";
-/* Create a variable first  $variable name*/
-/*global colours for all projects*/
-/*bandsite only images*/
 @font-face {
   src: url(../../assets/fonts/avenir/avenir-next-regular.otf);
-  font-family: "Avenir";
+  font-family: "AvenirRegular";
   font-style: normal;
 }
 
@@ -20,6 +17,9 @@
   font-style: normal;
 }
 
+/* Create a variable first  $variable name*/
+/*global colours for all projects*/
+/*bandsite only images*/
 /*media query for mobile using max width so that it doesn't have a break at min-width*/
 /*media query for tablet*/
 /*media query for  landscape, large pixel density desktop*/
@@ -27,7 +27,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: "Avenir";
+  font-family: "AvenirRegular";
   width: 100vw;
   height: 100vh;
   -webkit-box-sizing: border-box;
@@ -257,6 +257,13 @@ h5 {
   margin-left: 0;
 }
 
+.shows__hero .shows__heading-small {
+  position: absolute;
+  padding-top: 64px;
+  color: #fff;
+  padding-left: 5%;
+}
+
 .shows__hero .soundcloud-iframes {
   width: 90%;
   height: 125px;
@@ -265,13 +272,6 @@ h5 {
   left: 5%;
   bottom: 246px;
   margin-top: 64px;
-}
-
-.shows__hero #heading-smalls {
-  position: absolute;
-  padding-top: 64px;
-  padding-left: 5%;
-  color: #fff;
 }
 
 @media only screen and (min-width: 768px) {
@@ -306,11 +306,10 @@ h5 {
   #soundcloud-iframe {
     width: 50%;
   }
-}
-
-.shows__heading-small {
-  padding-top: 96px;
-  padding-left: 12.5%;
+  .shows__heading-small {
+    padding-top: 96px;
+    padding-left: 12.5%;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -329,10 +328,9 @@ h5 {
     left: 48.5%;
     bottom: 410px;
   }
-}
-
-.shows__heading-small {
-  padding-left: 12.5%;
+  .shows__heading-small {
+    padding-left: 12.5%;
+  }
 }
 
 .about {
@@ -627,7 +625,6 @@ textarea {
 }
 
 .new-comments-date {
-  display: inline-block;
   opacity: 0.3;
   margin-top: 40px;
   float: right;
