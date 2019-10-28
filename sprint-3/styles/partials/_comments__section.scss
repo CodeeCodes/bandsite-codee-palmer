@@ -8,6 +8,7 @@ input,
 textarea {
 	border-radius: 4px;
 	width: 95%;
+	background-color: #f8f8f8;
 }
 input {
 	height: 30px;
@@ -60,6 +61,7 @@ textarea {
 	width: 85%;
 	padding-bottom: 24px;
 	border-bottom: 1px solid $dividerColour;
+	opacity: 0.8;
 }
 
 .new-comments-date:after {
@@ -118,6 +120,7 @@ textarea {
 	}
 	.new-comments-date {
 		margin-right: 9%;
+		display: inline-block;
 	}
 	#hard-avatar {
 		right: 83px;
@@ -175,7 +178,7 @@ textarea {
 		margin-right: 3.02%;
 	}
 	#hard-avatar {
-		right: 105px;
+		right: 110px;
 		top: 77px;
 	}
 	.new-comments-paragraph {

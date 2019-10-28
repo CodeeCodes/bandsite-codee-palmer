@@ -15,10 +15,17 @@
 	text-align: center;
 	color: #fff;
 }
-
+.shows__table-heading {
+	margin: 32px 3.3% 40px 3.3%;
+	font-family: "AvenirBold";
+	font-display: bolder;
+}
+.table__heading-div {
+	display: none;
+}
 .new__show-location,
 .new__show-Venue {
-	opacity: 0.3;
+	opacity: 0.5;
 }
 
 @include medium {
@@ -59,9 +66,15 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
-		width: 75%;
+		width: 70%;
 		opacity: 0.3;
 		font-family: "AvenirBold";
+	}
+	.hidden-key {
+		display: none;
+	}
+	.hidden-heading {
+		margin-right: 10%;
 	}
 }
 
@@ -69,8 +82,15 @@
 	.shows-section {
 		margin: 0 25%;
 	}
+	.shows__table-heading {
+		margin-bottom: 0;
+	}
 	.table__heading-div {
 		justify-content: flex-end;
-		width: 65%;
+		width: 30%;
+		margin: 0 30%;
+	}
+	.hidden-heading {
+		margin: 0 15%;
 	}
 }

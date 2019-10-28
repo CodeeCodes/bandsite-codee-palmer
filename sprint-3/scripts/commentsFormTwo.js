@@ -29,7 +29,7 @@ function createObject(commentsObj) {
 	for (let i = commentsObj.length - 1; i >= 0; i--) {
 		// deletedDiv.appendChild(newComments);
 		let newCommentsAvatar = document.createElement("img");
-		newCommentsAvatar.src = "sprint-2/assets/Images/avatar.jpg";
+		newCommentsAvatar.src = "sprint-3/assets/Images/avatar.jpg";
 		newCommentsAvatar.className = "new-comments-avatar";
 		let newCommentsDiv = document.createElement("div");
 		newCommentsDiv.className = "new-comments-div";

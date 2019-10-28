@@ -105,7 +105,7 @@ h5 {
 
 #item-active {
   border-bottom: 2px solid #fff;
-  padding-bottom: 6px;
+  padding-bottom: 12px;
 }
 
 .bandsite-home {
@@ -308,7 +308,7 @@ h5 {
   }
   .shows__heading-small {
     padding-top: 96px;
-    padding-left: 12.5%;
+    padding-left: 5%;
   }
 }
 
@@ -574,6 +574,7 @@ input,
 textarea {
   border-radius: 4px;
   width: 95%;
+  background-color: #f8f8f8;
 }
 
 input {
@@ -636,6 +637,7 @@ textarea {
   width: 85%;
   padding-bottom: 24px;
   border-bottom: 1px solid #d5d2d1;
+  opacity: 0.8;
 }
 
 .new-comments-date:after {
@@ -693,6 +695,7 @@ textarea {
   }
   .new-comments-date {
     margin-right: 9%;
+    display: inline-block;
   }
   #hard-avatar {
     right: 83px;
@@ -750,7 +753,7 @@ textarea {
     margin-right: 3.02%;
   }
   #hard-avatar {
-    right: 105px;
+    right: 110px;
     top: 77px;
   }
   .new-comments-paragraph {
@@ -914,160 +917,6 @@ textarea {
   }
 }
 
-.shows__table {
-  margin: 0 3.2%;
-}
-
-.shows__table tbody tr {
-  display: block;
-  text-align: left;
-  padding-bottom: 24px;
-  padding-left: 0;
-}
-
-.shows__table tbody tr td {
-  padding-left: 0;
-  margin-top: 32px;
-}
-
-.shows__table button {
-  display: block;
-  width: 90vw;
-  height: 48px;
-  padding: 0;
-  border: 0;
-  background-color: #323232;
-  border-radius: 4px;
-  text-align: center;
-  color: #fff;
-}
-
-.shows__table-heading {
-  margin: 32px 3.3% 40px 3.3%;
-  font-family: "AvenirBold";
-  font-display: bolder;
-}
-
-.table-header {
-  display: block;
-  text-align: left;
-  padding: 0;
-  font-family: "AvenirBold";
-  opacity: 0.3;
-  margin-bottom: 16px;
-}
-
-.bolded-date {
-  font-family: "AvenirBold";
-  padding-left: 0;
-  margin-bottom: 24px;
-}
-
-.underline-button {
-  padding: 8px 0 16px 0;
-  border-bottom: 1px solid #afafaf;
-}
-
-.table__heading-div {
-  display: none;
-}
-
-.hidden-key {
-  opacity: 0.5;
-}
-
-@media only screen and (min-width: 768px) {
-  h1 {
-    font-size: 36px;
-    line-height: 44px;
-  }
-  h2 {
-    font-size: 24px;
-    line-height: 32px;
-  }
-  h3 {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  h4 {
-    font-size: 14px;
-    line-height: 20px;
-  }
-  h5 {
-    font-size: 12px;
-    line-height: 20px;
-  }
-  .shows__table {
-    margin: 0 5%;
-  }
-  .shows__table tbody tr {
-    display: inline-block;
-    width: 25%;
-    border-bottom: 1px solid #d5d2d1;
-    padding-top: 15px;
-    padding-bottom: 10px;
-  }
-  .shows__table tbody tr td {
-    margin-top: 0;
-    padding-top: 5px;
-  }
-  .shows__table button {
-    width: 160px;
-  }
-  .shows__table tbody {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 720px;
-  }
-  .shows__table .table-header {
-    display: none;
-  }
-  .shows__table-heading {
-    margin-left: 4%;
-  }
-  .hidden-heading {
-    margin-right: 50px;
-  }
-  .underline-button {
-    display: inline-block;
-    width: 160px;
-    padding: 0;
-    margin: 0;
-  }
-  .underline-button {
-    border-bottom: none;
-  }
-  .hidden-key {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 1440px) {
-  tbody {
-    width: 804px;
-  }
-  .shows__table {
-    margin-left: 30%;
-    margin-right: 12.5%;
-  }
-  .hidden-heading {
-    margin-right: 130px;
-  }
-  .shows__table-heading {
-    margin: 48px 12.5% 48px 12.5%;
-  }
-}
-
 .shows-section {
   margin: 0 5%;
 }
@@ -1087,9 +936,19 @@ textarea {
   color: #fff;
 }
 
+.shows__table-heading {
+  margin: 32px 3.3% 40px 3.3%;
+  font-family: "AvenirBold";
+  font-display: bolder;
+}
+
+.table__heading-div {
+  display: none;
+}
+
 .new__show-location,
 .new__show-Venue {
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1140,9 +999,15 @@ textarea {
             flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    width: 75%;
+    width: 70%;
     opacity: 0.3;
     font-family: "AvenirBold";
+  }
+  .hidden-key {
+    display: none;
+  }
+  .hidden-heading {
+    margin-right: 10%;
   }
 }
 
@@ -1150,11 +1015,18 @@ textarea {
   .shows-section {
     margin: 0 25%;
   }
+  .shows__table-heading {
+    margin-bottom: 0;
+  }
   .table__heading-div {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    width: 65%;
+    width: 30%;
+    margin: 0 30%;
+  }
+  .hidden-heading {
+    margin: 0 15%;
   }
 }
 /*# sourceMappingURL=main.css.map */
